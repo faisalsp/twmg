@@ -1,0 +1,233 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-header .navbar-nav li {
+    margin-left: 20px;
+}
+
+.main-header .navbar-nav .nav-link {
+    color: #142C59;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-header .navbar-nav li.nav-item a.nav-link.active,
+.main-header .navbar-nav li.nav-item a.nav-link:hover {
+    color: #DF6124;
+}
+
+.main-header .navbar-nav li.nav-item a.nav-link:hover {
+    text-decoration: underline;
+}
+.grow-section {
+    padding: 50px 0;
+    background-color: #F3F3F7;
+}
+.grow-section .card .card-text {
+    display: none;
+}
+.grow-section .card .card-body {
+    padding-bottom: 0;
+}
+.grow-section .card {
+    position: relative;
+    border: 3px solid #C7CBD7;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow: hidden;
+    background: transparent;
+}
+.grow-section .card h4 {
+    font-size: 20px;
+}
+
+.grow-section .card:hover {
+    border: 2px solid #DF6124;
+}
+.grow-section .card:hover img {
+    display: none;
+}
+.grow-section .card:hover .card-text {
+    display: block;
+}
+.grow-section .card:hover .card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+.grow-section .show-more {
+    color: #DF6124;
+    margin-top: 20px;
+}
+.grow-section .card a {
+    color: #DF6124;
+    font-weight: 700;
+}
+.faqs-section {
+    background-color: #F3F3F7;
+    padding: 50px 0 0;
+}
+.grow-section h3,
+.faqs-section h3 {
+    font-weight: 700;
+    color: #142C59;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.grow-section p.section-desc,
+.faqs-section p.section-desc {
+    color: #142C59;
+    margin-bottom: 40px;
+}
+
+.faqs-section .left-item button {
+    position: relative;
+    margin-top: 20px;
+    box-shadow: none !important;
+    background-color: #142C59;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #142C59;
+}
+
+.faqs-section .right-item button {
+    position: relative;
+    margin-top: 20px;
+    box-shadow: none !important;
+    background-color: transparent;
+    padding: 15px;
+    color: #142C59;
+    border-radius: 10px;
+    border: 2px solid #C7CBD7;
+}
+
+.faqs-section .left-item:first-child button,
+.faqs-section .right-item:first-child button {
+    margin-top: 0;
+}
+
+.faqs-section button:after {
+    content: "\f068";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+}
+
+.faqs-section button.collapsed:after {
+    content: "\2b";
+}
+
+.faqs-section .faqs-item .card-body {
+    border: 0;
+    background: transparent;
+}
+
+.cta-section {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #F3F3F7 50%, #E7E7EF 50%);
+}
+
+.cta-banner {
+    background-color: #142C59;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 9px 8px 15px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 9px 8px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 9px 8px 15px 0px rgba(0,0,0,0.2);
+}
+
+.cta-banner h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.cta-banner h4,
+.cta-banner p {
+    width: 65%;
+    margin: 0 auto 20px;
+}
+
+.cta-banner a {
+    background-color: #DF6124;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.cta-banner i {
+    margin-right: 10px;
+}
+
+.cta-banner a,
+.cta-banner p {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #E7E7EF;
+}
+
+footer h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #142C59;
+}
+
+footer .footer-desc {
+    color: #142C59;
+    margin-bottom: 25px;
+}
+
+footer .footer-info p,
+footer .footer-info a {
+    color: #DF6124;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer .social-icons i {
+    font-size: 30px;
+    color: #DF6124;
+}
+
+footer .subscribe-form p {
+    margin-bottom: 5px;
+    color: #142C59;
+}
+
+footer .subscribe-form input[type='email'] {
+    border: 1px solid #0F1831;
+    width: 100%;
+    padding: 10px;
+}
+
+footer .subscribe-form input[type='submit'] {
+    background-color: #142C59;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    width: 100%;
+}
+
+footer .footer-navigation a,
+footer .footer-navigation a:hover {
+    color: #DF6124;
+    text-decoration: underline;
+    display: initial;
+}
+
+footer .copyright {
+    background: linear-gradient(to right, #152C5A 5%, #4f5e8d);
+    color: #fff;
+}

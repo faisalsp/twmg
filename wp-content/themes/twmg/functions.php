@@ -78,7 +78,55 @@ function genesis_sample_enqueue_scripts_styles() {
 		null
 	);
 
-	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style(
+		genesis_get_theme_handle() . '-bootstrap',
+		get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css',
+		[],
+		genesis_get_theme_version(),
+		'all'
+	);
+
+	wp_enqueue_style(
+		genesis_get_theme_handle() . '-custom',
+		get_stylesheet_directory_uri() . '/assets/css/custom.css',
+		[],
+		genesis_get_theme_version(),
+		'all'
+	);
+
+	wp_enqueue_script(
+		genesis_get_theme_handle() . '-bootstrap',
+		get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js',
+		[],
+		genesis_get_theme_version(),
+		true
+	);
+
+	wp_enqueue_script(
+		genesis_get_theme_handle() . '-custom',
+		get_stylesheet_directory_uri() . '/assets/js/custom.js',
+		[],
+		genesis_get_theme_version(),
+		true
+	);
+
+	wp_enqueue_script(
+		genesis_get_theme_handle() . '-fontawesome',
+		'https://kit.fontawesome.com/c3d51ca1da.js',
+		[],
+		genesis_get_theme_version(),
+		true
+	);
+
+	wp_enqueue_style(
+		genesis_get_theme_handle() . '-roboto-fonts',
+		'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
+		[],
+		genesis_get_theme_version(),
+		'all'
+	);
+
+	
 
 	if ( genesis_is_amp() ) {
 		wp_enqueue_style(
@@ -263,4 +311,40 @@ function genesis_sample_comments_gravatar( $args ) {
 	$args['avatar_size'] = 60;
 	return $args;
 
+}
+
+add_filter( 'genesis_markup_site-inner', '__return_null' );
+add_filter( 'genesis_markup_content-sidebar-wrap', '__return_null' );
+add_filter( 'genesis_markup_content-sidebar-wrap_output', '__return_false' );
+add_filter( 'genesis_markup_content', '__return_null' );
+
+//Remove site header.
+
+remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+remove_action( 'genesis_header', 'genesis_do_header' );
+remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
+remove_action( 'genesis_header', 'genesis_do_nav', 12 );
+
+// Remove default stylesheet
+remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
+
+// Remove Skip Links
+remove_action( 'genesis_before_header', 'genesis_skip_links', 5 );
+
+//Custom Header
+add_action('genesis_header','custom_header_twmg');
+function custom_header_twmg() {
+	get_template_part("page-templates/section/header");
+}
+
+// Remove meta
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+add_action( 'genesis_footer', 'custom_twmg_footer' );
+
+function custom_twmg_footer() {
+	get_template_part("page-templates/section/footer");
 }

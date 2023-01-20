@@ -56,3 +56,7 @@ function genesis_sample_color_brightness( $color, $change ) {
 	return '#' . dechex( $red ) . dechex( $green ) . dechex( $blue );
 
 }
+
+function get_cta_banner($args = []) {
+	get_template_part("_components/ctabanner", null, $args);
+}
