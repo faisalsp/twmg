@@ -60,3 +60,7 @@ function genesis_sample_color_brightness( $color, $change ) {
 function get_cta_banner($args = []) {
 	get_template_part("_components/ctabanner", null, $args);
 }
+
+function get_cta_button($args = []) {
+	get_template_part("_components/ctabutton", null, $args);
+}

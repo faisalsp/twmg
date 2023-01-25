@@ -1,8 +1,11 @@
 <nav class="main-header sticky-top navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
+        <?php
+            $custom_logo_id = get_theme_mod( 'custom_logo' );
+            $image_url = wp_get_attachment_image_src ( $custom_logo_id , 'full' )[0];
+        ?>
         <a class="navbar-brand" href="#">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/twmg-digital-agency-sydney.svg" alt="" width="150"
-                class="d-inline-block">
+            <img src="<?php echo $image_url; ?>" alt="" width="150" class="d-inline-block">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

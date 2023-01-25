@@ -2,9 +2,12 @@
     <div class="container py-5">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
             <div class="col col-md-4 mb-3">
+                <?php
+                $custom_logo_id = get_theme_mod('custom_logo');
+                $image_url = wp_get_attachment_image_src($custom_logo_id, 'full')[0];
+                ?>
                 <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/twmg-digital-agency-sydney.svg"
-                        width="100" />
+                    <img src="<?php echo $image_url; ?>" width="100" />
                 </a>
                 <p class="footer-desc">Lorem ipsum dolor sit amet, consetetur sadispscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et</p>
@@ -53,5 +56,7 @@
         </div>
     </div>
     <?php $year = date("Y"); ?>
-    <p class="text-center mb-0 py-3 copyright">&copy; Copyright TWMG <?php echo $year; ?></p>
+    <p class="text-center mb-0 py-3 copyright">&copy; Copyright TWMG
+        <?php echo $year; ?>
+    </p>
 </footer>
