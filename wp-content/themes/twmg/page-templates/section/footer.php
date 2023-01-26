@@ -6,7 +6,7 @@
                 $custom_logo_id = get_theme_mod('custom_logo');
                 $image_url = wp_get_attachment_image_src($custom_logo_id, 'full')[0];
                 ?>
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <a href="<?php echo get_site_url(); ?>" class="d-flex footer-icon align-items-center link-dark text-decoration-none">
                     <img src="<?php echo $image_url; ?>" width="100" />
                 </a>
                 <p class="footer-desc">Lorem ipsum dolor sit amet, consetetur sadispscing elitr, sed diam nonumy eirmod
@@ -36,13 +36,13 @@
             <div class="col col-md-3 mb-3">
                 <h5>Socials</h5>
                 <ul class="nav flex-row social-icons">
-                    <li class="nav-item me-2"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
+                    <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
                     </li>
-                    <li class="nav-item me-2"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
+                    <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
                     </li>
-                    <li class="nav-item me-2"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
+                    <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
                     </li>
-                    <li class="nav-item me-2"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
+                    <li class="nav-item"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook"></i></a>
                     </li>
                 </ul>
                 <div class="subscribe-form mt-5">
@@ -56,7 +56,7 @@
         </div>
     </div>
     <?php $year = date("Y"); ?>
-    <p class="text-center mb-0 py-3 copyright">&copy; Copyright TWMG
+    <p class="text-center mb-0 copyright">&copy; Copyright TWMG
         <?php echo $year; ?>
     </p>
 </footer>

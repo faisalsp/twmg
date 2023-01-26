@@ -130,6 +130,14 @@ function genesis_sample_enqueue_scripts_styles()
 		'all'
 	);
 
+	wp_enqueue_style(
+		genesis_get_theme_handle() . '-lemon-fonts',
+		get_stylesheet_directory_uri() . '/assets/css/fonts.css',
+		[],
+		genesis_get_theme_version(),
+		'all'
+	);
+
 
 
 	if (genesis_is_amp()) {

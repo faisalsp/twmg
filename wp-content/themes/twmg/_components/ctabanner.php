@@ -1,17 +1,11 @@
 <div class="container">
     <div class="outer-border mx-auto">
         <div class="cta-banner text-center ">
-            <h4>Need Help Understanding What Services Will Deliver The Highest ROI?</h4>
-            <p>Our Digital Marketing experts are ready to analyze your business and suggest the best path forward. Our
-                research
-                can even identify potential markets to expand into.</p>
-            <?php 
-            if ($args['class'] == 'homepage') {
-                echo get_cta_button(array("class" => "homepage"));
-            } else {
-            
-            } 
-            ?>
+            <h4>Unlock Your Business Potential with a Tailored Digital Marketing Strategy and deliver skyhigh roi</h4>
+            <p>Our team of experts will work with you to create a strategy that is tailored to your unique business
+                goals. From SEO to social media marketing, our solutions will help you reach your target audience and
+                drive conversions. Don't let your competition get ahead. Let us help you succeed today.</p>
+            <?php echo get_cta_button(array("class" => $args['class'])); ?>
         </div>
     </div>
 </div>

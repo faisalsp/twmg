@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "LemonRegular";
+    src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Regular.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LemonMedium";
+    src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Medium.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LemonBold";
+    src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
+    font-display: swap;
+}

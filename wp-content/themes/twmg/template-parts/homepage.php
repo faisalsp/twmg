@@ -1,23 +1,28 @@
 <div class="banner-section">
     <div class="bg-section z-0"></div>
-    <div class="container position-relative z-1">
+    <div class="container-fluid position-relative z-1">
         <div class="row align-items-center gx-5">
             <div class="col-md-6">
-                <h1>More Leads, More Customers,<br />More Revenue.</h1>
-                <p class="text-white">Request your free audit today. We'll increase your visibility, drive more leads
-                    and skyrocket your sales.</p>
-                <?php echo get_cta_button(array("class" => "homepage")); ?>
-                <div class="google-wrapper">
-                    <div class="google-rate">
-                        <i class="fa-brands fa-google"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
-                    </div>
-                    <div class="google-desc">
-                        <p>Rated 4.8 on Google</p>
+                <div class="banner-text position-relative">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-arrow.svg"
+                        width="90" />
+                    <h1>More Leads, More Customers,<br />More Revenue.</h1>
+                    <p class="text-white">Request your free audit today. We'll increase your visibility, drive more
+                        leads
+                        and skyrocket your sales.</p>
+                    <?php echo get_cta_button(array("class" => "homepage")); ?>
+                    <div class="google-wrapper">
+                        <div class="google-rate">
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div class="google-desc">
+                            <p>Rated 4.8 on Google</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,8 +30,10 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image.svg" class="w-100" />
             </div>
         </div>
+    </div>
+    <div class="container position-relative">
         <div class="partner-slider">
-            <h3>Loved By Australia's Top <br/> Companies</h3>
+            <h3>Loved By Australia's Top <br /> Companies</h3>
             <ul>
                 <li>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
@@ -91,7 +98,7 @@
     </div>
 </div>
 <div class="why-section">
-    <div class="container">
+    <div class="container-fluid">
         <div class="caption">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/captions/caption-1.svg" />
         </div>
@@ -130,7 +137,9 @@
                 <?php echo get_cta_button(array("class" => "homepage")); ?>
             </div>
             <div class="col-md-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop.png" class="w-100" />
+                <div class="service-image text-end">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop.png" />
+                </div>
             </div>
         </div>
     </div>
@@ -141,19 +150,23 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/captions/caption-2.svg" />
         </div>
         <h3 class="mx-auto text-center">Three Proven Steps to Digital Marketing Success</h3>
+        <p class="w-75 mx-auto text-center">We understand that every business is different and our goal is to cater to
+            yours. Our
+            diverse range of services can help you achieve your objectives. Whether you require a complete revamp of
+            your website or just regular.</p>
         <?php $stepsarr = array(
             array(
-                "title" => "We start with an in-depth analysis of your current site and visibility.",
+                "title" => "Our process begins with a thorough examination of your current website and online visibility.",
                 "description" => "We believe that each client is unique, so we work with you to indentify your most pressing challanges, then develop an approach that's tailored to those needs.<br/><br/>If you want more leads, we'll help you get them. If you want more customers ready to buy, we'll help you achieve that goal as well. We understand what it takes for businesses like yours to succeed in today's digital landscape - and we're here to help them do just that.",
                 "image" => "image-1.png"
             ),
             array(
-                "title" => "We then create a customized strategy to improve your visibility, increase traffic, and generate more leads.",
+                "title" => "Following the analysis, we develop a tailored plan to enhance your online presence, drive more traffic, and generate leads.",
                 "description" => "We set our sites on a digital marketing strategy, but not just any strategy - one that is custom tailored for historic data, your organization and goals. We do extensive research and identify where your marketing dollars is spent most efficiently.",
                 "image" => "image-2.png"
             ),
             array(
-                "title" => "Our expert teams will implement the strategy and rigourously test each solution and continue to refine",
+                "title" => "Our expert teams will execute the plan and thoroughly test each solution, continuously making improvements.",
                 "description" => "Our expert teams will ensure that your strategies are implemented and rigorously tested, so you can deliver results faster. We'll continue to refine our processes to make sure we're constantly delivering value as you need it.",
                 "image" => "image-3.png"
             )
@@ -210,9 +223,9 @@
         <div class="caption text-start">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/captions/caption-3.svg" />
         </div>
-        <h3 class="w-50 mx-auto">How We Helped a Craft Beer Company Achieve a 20% Increase in Turnover</h3>
+        <h3 class="w-50 mx-auto">How we helped a craft beer company achieve a 20% increase in turnover</h3>
         <div class="video-wrapper">
-            <img src="https://placehold.jp/1000x500.png" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/craft-beer.png" />
             <i class="fa-solid fa-play"></i>
         </div>
     </div>
@@ -222,47 +235,51 @@
         <div class="caption text-end">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/captions/caption-4.svg" />
         </div>
-        <h3 class="w-50 mx-auto">Want to Grow Your Business Online? We've Got You Covered</h3>
-        <p class="w-75 mx-auto section-desc">We know that your business is unique and we're here to help. We have a
-            wide
-            range of services that can help you reach your goals. Whether you need an overhaul of your current
-            website
-            or just some maintenance, our team is ready to work with you to make sure you meet all of your needs.
+        <h3 class="w-50 mx-auto">Need assistance expanding your online presence? We're here to help.</h3>
+        <p class="w-75 mx-auto section-desc">We understand that every business is different and our goal is to cater to
+            yours. Our diverse range of services can help you achieve your objectives. Whether you require a complete
+            revamp of your website or just regular upkeep, our team is eager to collaborate with you and ensure that all
+            of your requirements are met.
         </p>
         <div class="row">
             <?php
             $growarr = array(
-                "Web Design and Development",
-                "Digital Marketing",
-                "Search Engine Optimisation",
-                "Google Ads Management",
-                "Facebook Ads Management",
-                "Direct Response Landing Pages",
-                "Content Marketing",
-                "Branding & Logo Design"
+                array(
+                    "title" => "Marketing Strategy",
+                    "description" => "We know that your business is unique and we're here to help. We have a wide range of services that can help you reach your goals. Whether you need an overhaul of your current website or just some maintenance, our team is ready to work with you to make sure you meet all of your needs.",
+                    "icon" => '<i class="fa-solid fa-chess-knight"></i>'
+                ),
+                array(
+                    "title" => "Marketing Strategy + Implementation",
+                    "description" => "We know that your business is unique and we're here to help. We have a wide range of services that can help you reach your goals. Whether you need an overhaul of your current website or just some maintenance, our team is ready to work with you to make sure you meet all of your needs.",
+                    "icon" => '<i class="fa-solid fa-chess-queen"></i>'
+                )
             );
             foreach ($growarr as $val): ?>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="card">
-                        <div>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/grow-icon.png"
-                                class="pt-5 w-50 m-auto" />
-                        </div>
                         <div class="card-body">
-                            <h4>
-                                <?php echo $val; ?>
-                            </h4>
-                            <div class="card-text">
-                                <p>Your future customers are online! Here's how to get their attention,
-                                    demonstrate your value and make yourself irresistible to them</p>
-                                <a href="#">Learn More...</a>
+                            <div class="icon">
+                                <?php echo $val['icon']; ?>
                             </div>
+                            <h4>
+                                <?php echo $val['title']; ?>
+                            </h4>
+                            <p>
+                                <?php echo $val['description']; ?>
+                            </p>
+                            <?php echo get_cta_button(array("class" => "homepage")); ?>
+
                         </div>
                     </div>
                 </div>
             <?php endforeach; ?>
             <div class="col-12">
-                <a href="#" class="text-center show-more d-block">All services...</a>
+                <div class="learn-more">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <span>Want to learn more about our offerings? Check out our</span>
+                    <a href="#">service page</a>
+                </div>
             </div>
         </div>
 
@@ -325,6 +342,6 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/captions/caption-6.svg" />
             </div>
         </div>
-        <?php echo get_cta_banner(array("class" => "homepage")); ?>
+        <?php echo get_cta_banner(array("class" => "cta-homepage")); ?>
     </div>
 </div>
