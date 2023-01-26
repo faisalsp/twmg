@@ -36,8 +36,9 @@ body {
 
 .main-header .navbar-nav .nav-link {
     color: #152C5A;
-    font-weight: 700;
+    font-family: "LemonBold", sans-serif;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .caption img {
@@ -115,7 +116,7 @@ body {
 }
 
 .why-section .container-fluid .service-image img {
-    width: 550px;
+    width: 680px;
 }
 
 .why-section .caption {
