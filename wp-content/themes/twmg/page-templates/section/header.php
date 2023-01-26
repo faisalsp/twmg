@@ -1,11 +1,13 @@
-<nav class="main-header sticky-top navbar navbar-expand-lg navbar-light bg-light">
+<nav class="main-header sticky-top navbar navbar-expand-lg navbar-light">
     <div class="container">
         <?php
             $custom_logo_id = get_theme_mod( 'custom_logo' );
             $image_url = wp_get_attachment_image_src ( $custom_logo_id , 'full' )[0];
+            $white_logo = get_stylesheet_directory_uri() . "/assets/images/white-logo.svg";
         ?>
-        <a class="navbar-brand" href="#">
-            <img src="<?php echo $image_url; ?>" alt="" width="150" class="d-inline-block">
+        <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
+            <img src="<?php echo $image_url; ?>" alt="" width="150" class="colour-logo">
+            <img src="<?php echo $white_logo; ?>" alt="" width="150" class="white-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

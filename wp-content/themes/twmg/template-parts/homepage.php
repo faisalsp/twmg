@@ -7,14 +7,30 @@
                 <p class="text-white">Request your free audit today. We'll increase your visibility, drive more leads
                     and skyrocket your sales.</p>
                 <?php echo get_cta_button(array("class" => "homepage")); ?>
+                <div class="google-wrapper">
+                    <div class="google-rate">
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="google-desc">
+                        <p>Rated 4.8 on Google</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image.svg" class="w-100" />
             </div>
         </div>
         <div class="partner-slider">
-            <h3>Loved By Some of Australia's Top 1000 Companies</h3>
+            <h3>Loved By Australia's Top <br/> Companies</h3>
             <ul>
+                <li>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
+                </li>
                 <li>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
                 </li>
