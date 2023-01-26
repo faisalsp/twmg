@@ -471,6 +471,15 @@ body.home-page {
     font-family: "LemonBold", sans-serif;
 }
 
+.cta-banner h4 .underscore:after {
+    content: url("/wp-content/themes/twmg/assets/images/cta-underscore.svg");
+    position: absolute;
+    width: 125%;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .cta-banner h4,
 .cta-banner p {
     width: 95%;
