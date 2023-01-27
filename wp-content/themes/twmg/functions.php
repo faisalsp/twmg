@@ -131,7 +131,7 @@ function genesis_sample_enqueue_scripts_styles()
 	);
 
 	wp_enqueue_style(
-		genesis_get_theme_handle() . '-lemon-fonts',
+		genesis_get_theme_handle() . '-custom-fonts',
 		get_stylesheet_directory_uri() . '/assets/css/fonts.css',
 		[],
 		genesis_get_theme_version(),

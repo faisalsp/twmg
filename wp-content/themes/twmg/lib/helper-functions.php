@@ -64,3 +64,7 @@ function get_cta_banner($args = []) {
 function get_cta_button($args = []) {
 	get_template_part("_components/ctabutton", null, $args);
 }
+
+function get_top_banner($args = []) {
+	get_template_part("_components/banner", null, $args);
+}

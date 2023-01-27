@@ -15,3 +15,21 @@
     src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
     font-display: swap;
 }
+
+@font-face {
+    font-family: "ProximaRegular";
+    src: url("/wp-content/themes/twmg/assets/fonts/Proxima-Nova-Reg.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ProximaMedium";
+    src: url("/wp-content/themes/twmg/assets/fonts/Proxima-Nova-Semibold.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ProximaBold";
+    src: url("/wp-content/themes/twmg/assets/fonts/Proxima-Nova-Bold.otf") format("opentype");
+    font-display: swap;
+}

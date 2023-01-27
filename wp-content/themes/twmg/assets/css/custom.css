@@ -5,25 +5,30 @@ body {
 .main-header {
     padding: 20px 0;
     transition: .3s;
+    background-color: #fff;
+}
+
+.home-page .main-header {
+    background-color: transparent;
 }
 
 .main-header .navbar-nav li {
     margin-left: 20px;
 }
 
-.main-header .colour-logo {
+.home-page .main-header .colour-logo {
     display: none;
 }
 
-.main-header .white-logo {
+.home-page .main-header .white-logo {
     display: inline-block;
 }
 
-.main-header.sticky-active .white-logo {
+.home-page .main-header.sticky-active .white-logo {
     display: none;
 }
 
-.main-header.sticky-active .colour-logo {
+.home-page .main-header.sticky-active .colour-logo {
     display: inline-block;
 }
 
@@ -143,7 +148,8 @@ body {
 }
 
 
-body.home-page {
+body.home-page,
+body.about-us-page {
     background-color: #F3F2F7;
 }
 
@@ -433,6 +439,88 @@ body.home-page {
     background: transparent;
 }
 
+.about-section {
+    padding: 50px 0;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #0C1933;
+}
+
+.about-section .card {
+    padding: 30px 35px 0;
+    border: 0;
+    border-radius: 20px;
+    margin-top: -150px;
+}
+
+.about-section .card-title h2 {
+    font-size: 18px;
+    color: #152C5A;
+    font-family: "LemonBold", sans-serif;
+}
+
+.partner-list {
+    margin-top: 35px;
+}
+
+.partner-list img {
+    object-fit: contain;
+    padding: 5px 0;
+    max-width: 150px;
+}
+
+.about-image {
+    padding: 100px 0;
+}
+
+.about-image img {
+    border-radius: 20px;
+}
+
+.about-image span {
+    margin-top: 13px;
+    display: block;
+    color: #939393;
+    font-size: 12px;
+    font-family: "ProximaRegular", sans-serif;
+}
+
+.about-main-desc p {
+    font-family: "ProximaRegular", sans-serif;
+    font-size: 24px;
+    color: #152C5A;
+    line-height: 2.5rem;
+}
+
+.about-extra-desc p {
+    font-family: "ProximaRegular", sans-serif;
+    font-size: 18px;
+    color: #152C5A;
+    line-height: 1.8rem;
+}
+
+.top-banner {
+    background-color: #0C1933;
+    padding: 120px 0 30px;
+}
+
+.top-banner span {
+    color: #E06226;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.top-banner h1 {
+    color: #fff;
+    font-size: 18px;
+    font-family: "LemonBold", sans-serif;
+    width: 75%;
+}
+
 .cta-section {
     padding: 50px 0;
     background: linear-gradient(to bottom, #F3F3F7 50%, #E7E7EF 50%);
@@ -509,16 +597,18 @@ footer {
 
 footer h5 {
     text-transform: uppercase;
-    font-weight: 700;
     color: #152C5A;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "ProximaBold", sans-serif;
 }
 
 footer .footer-desc {
     color: #152C5A;
     margin-bottom: 25px;
     font-size: 18px;
-    width: 80%;
+    width: 90%;
+    font-family: "ProximaRegular", sans-serif;
 }
 
 footer .footer-icon {
@@ -530,6 +620,13 @@ footer .footer-info a {
     color: #DF6124;
     font-weight: 700;
     font-size: 24px;
+    font-family: "ProximaBold", sans-serif;
+}
+
+footer .footer-info h5 {
+    font-family: "ProximaBold", sans-serif;
+    font-size: 18px;
+
 }
 
 footer .social-icons i {
@@ -544,6 +641,8 @@ footer .social-icons li {
 footer .subscribe-form p {
     margin-bottom: 5px;
     color: #152C5A;
+    font-family: "ProximaMedium";
+    font-size: 16px;
 }
 
 footer .subscribe-form input[type='email'] {
@@ -567,10 +666,13 @@ footer .footer-navigation a:hover {
     text-decoration: underline;
     display: initial;
     font-size: 18px;
+    font-family: "ProximaMedium", sans-serif;
 }
 
 footer .copyright {
     background: transparent linear-gradient(90deg, #152C5A 0%, #3D5B97 100%) 0% 0% no-repeat padding-box;
     color: #fff;
     padding: 25px;
+    font-size: 12px;
+    font-family: "ProximaBold", sans-serif;
 }
