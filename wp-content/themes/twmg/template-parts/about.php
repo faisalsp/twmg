@@ -46,12 +46,24 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="about-image-section">
+    <div class="container">
+        <div class="row">
             <div class="col-12">
                 <div class="about-image">
-                    <img src="https://dummyimage.com/1440x435/cccccc/000.png" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/discuss-image.png" class="w-100" />
                     <span class="text-center">Image showing whatever the blog is about</span>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="about-description-section">
+    <div class="container">
+        <div class="row">
             <div class="col-md-6">
                 <div class="about-main-desc">
                     <p>We use sophisticated analysis, intelligent interpretation, insight and proven strategy to ensure
@@ -65,6 +77,116 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                         strategies that mesh with clients’ business objectives.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="who-we-are-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="who-we-are-wrapper h-100">
+                    <h3>Who We are</h3>
+                    <ul class="flex-column">
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="who-we-are-wrapper h-100">
+                    <h3>What We Aren't</h3>
+                    <ul class="flex-column">
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Humans</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="who-we-are-wrapper h-100">
+                    <h3>Why We Do</h3>
+                    <ul class="flex-column why-we-do-list">
+                        <li class="list-item mb-3">Digital Marketing</li>
+                        <li class="list-item mb-3">Search Engine Optimisation</li>
+                        <li class="list-item mb-3">Paid Marketing</li>
+                        <li class="list-item mb-3">Content Marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="letter-section">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-8">
+                <h3>Letter From The Director</h3>
+                <p>As the Director of this company, I am committed to ensuring that our customers receive the highest
+                    level of value and care. We understand that the success of our business is directly tied to the
+                    satisfaction of our customers.</p>
+                <p>That is why we have made it our mission to provide the same level of
+                    dedication and attention to detail that we would expect for our own business. We strive to be
+                    transparent and open with our clients about the results we are achieving on their behalf.</p>
+                <p>We value
+                    the trust that our customers place in us, and we are constantly working to improve our services to
+                    meet their needs. Our team is dedicated to providing exceptional customer service and delivering
+                    measurable results.
+                <p>We appreciate your business and look forward to building a long-term
+                    relationship with you.</p>
+                <p>Sincerely,</p>
+                <span class="name">Kirby Hibbins - Company Director</span>
+            </div>
+            <div class="col-md-4">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png"
+                    class="w-100" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our-team-section">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-12">
+                <h3 class="text-center">Our Executive Team</h3>
+            </div>
+            <?php
+            $teamarr = array(
+                array(
+                    "name" => "Kirby Hibbins",
+                    "title" => "Director / Digital Marketing Specialist"
+                ),
+                array(
+                    "name" => "Reggie Spelman",
+                    "title" => "Project Manager"
+                ),
+                array(
+                    "name" => "Chendra Cahyadi",
+                    "title" => "Dev Team Manager"
+                ),
+                array(
+                    "name" => "Reggie Spelman",
+                    "title" => "Project Manager"
+                ),
+            );
+            ?>
+            <?php foreach ($teamarr as $team): ?>
+                <div class="col-md-3">
+                    <img src="https://dummyimage.com/350x350/cccccc/000.png" class="w-100" />
+                    <p class="text-center">
+                        <?php echo $team['name']; ?>
+                    </p>
+                    <span class="text-center">
+                        <?php echo $team['title']; ?>
+                    </span>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

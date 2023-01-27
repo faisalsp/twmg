@@ -149,7 +149,8 @@ body {
 
 
 body.home-page,
-body.about-us-page {
+body.about-us-page,
+body.contact-us-page {
     background-color: #F3F2F7;
 }
 
@@ -247,7 +248,7 @@ body.about-us-page {
 }
 
 .faqs-section {
-    background-color: #F3F3F7;
+    background-color: #F3F2F7;
     padding: 50px 0 0;
 }
 
@@ -471,11 +472,12 @@ body.about-us-page {
     max-width: 150px;
 }
 
-.about-image {
+.about-image-section {
     padding: 100px 0;
+    background: linear-gradient(to bottom, #F3F2F7 50%, #FFFFFF 50%);
 }
 
-.about-image img {
+.about-image-section .about-image img {
     border-radius: 20px;
 }
 
@@ -487,18 +489,160 @@ body.about-us-page {
     font-family: "ProximaRegular", sans-serif;
 }
 
-.about-main-desc p {
+.about-description-section {
+    padding: 0 0 50px;
+    background-color: #FFFFFF;
+}
+
+.about-description-section .about-main-desc p {
     font-family: "ProximaRegular", sans-serif;
     font-size: 24px;
     color: #152C5A;
     line-height: 2.5rem;
 }
 
-.about-extra-desc p {
+.about-description-section .about-extra-desc p {
     font-family: "ProximaRegular", sans-serif;
     font-size: 18px;
     color: #152C5A;
     line-height: 1.8rem;
+}
+
+.who-we-are-section {
+    padding: 100px 0;
+    background-color: #F3F2F7;
+}
+
+.who-we-are-section h3 {
+    font-size: 18px;
+    font-family: "LemonBold", sans-serif;
+    margin-bottom: 30px;
+    color: #152C5A;
+}
+
+.who-we-are-section ul li {
+    color: #152C5A;
+    font-family: "ProximaMedium", sans-serif;
+}
+
+.who-we-are-section ul.why-we-do-list li {
+    font-size: 18px;
+}
+
+.who-we-are-section .col-md-4:not(:last-child) .who-we-are-wrapper {
+    border-right: 3px solid rgba(255, 87, 51, 0.2);
+    width: 90%;
+}
+
+.letter-section {
+    background: linear-gradient(90deg, #0C1933 0%, #264583 100%);
+    padding: 100px 0 0;
+    color: #fff;
+}
+
+.our-team-section h3,
+.letter-section h3 {
+    font-size: 18px;
+    font-family: "LemonBold", sans-serif;
+    margin-bottom: 30px;
+}
+
+.letter-section span.name {
+    font-family: "ProximaBold", sans-serif;
+    font-size: 16px;
+}
+
+.our-team-section {
+    padding: 80px 0 50px;
+}
+
+.our-team-section h3 {
+    color: #152C5A;
+    margin-bottom: 50px;
+}
+
+.our-team-section p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0 0;
+    color: #0C1933;
+}
+
+.our-team-section img {
+    border-radius: 20px;
+}
+
+.our-team-section span {
+    display: block;
+    font-size: 16px;
+    color: #0C1933;
+    padding: 0 20px;
+}
+
+.contact-divide-section {
+    background: url("/wp-content/themes/twmg/assets/images/divide-background.png") no-repeat center center;
+    background-size: cover;
+    padding: 185px 0;
+    margin-bottom: 80px;
+}
+
+.contact-divide-section h3 {
+    font-family: "LemonBold", sans-serif;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.contact-us-section {
+    padding: 30px 0;
+}
+
+.contact-us-section .card {
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #152C5A;
+    padding: 50px 40px 0;
+    margin-top: -140px;
+}
+
+.contact-us-section .card h2 {
+    font-family: "LemonBold", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-us-section .card h2 .underscore:after {
+    content: url("/wp-content/themes/twmg/assets/images/contact-us-underscore.svg");
+    position: absolute;
+    width: 100%;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-us-section .card label {
+    font-family: "ProximaRegular", sans-serif;
+    font-size: 14px;
+}
+
+.contact-us-section .card .wpcf7-form-control {
+    width: 100%;
+    padding: 4px;
+    outline: 0;
+}
+
+.contact-us-section .card form p {
+    margin-bottom: 25px;
+}
+
+.contact-us-section .card form .wpcf7-submit {
+    color: #fff;
+    background-color: #E06226;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0;
+    padding: 13px;
 }
 
 .top-banner {
@@ -523,7 +667,7 @@ body.about-us-page {
 
 .cta-section {
     padding: 50px 0;
-    background: linear-gradient(to bottom, #F3F3F7 50%, #E7E7EF 50%);
+    background: linear-gradient(to bottom, #F3F2F7 50%, #E7E7EF 50%);
 }
 
 .cta-section .container {
@@ -664,7 +808,7 @@ footer .footer-navigation a,
 footer .footer-navigation a:hover {
     color: #DF6124;
     text-decoration: underline;
-    display: initial;
+    display: inline-block;
     font-size: 18px;
     font-family: "ProximaMedium", sans-serif;
 }
