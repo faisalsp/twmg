@@ -54,7 +54,8 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         <div class="row">
             <div class="col-12">
                 <div class="about-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/discuss-image.png" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/discuss-image.png"
+                        class="w-100" />
                     <span class="text-center">Image showing whatever the blog is about</span>
                 </div>
             </div>
@@ -63,7 +64,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 </div>
 <div class="about-description-section">
     <div class="container">
-        <div class="row">
+        <div class="row gx-5">
             <div class="col-md-6">
                 <div class="about-main-desc">
                     <p>We use sophisticated analysis, intelligent interpretation, insight and proven strategy to ensure
@@ -85,39 +86,36 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         <div class="row">
             <div class="col-md-4">
                 <div class="who-we-are-wrapper h-100">
-                    <h3>Who We are</h3>
+                    <h3>what we value</h3>
                     <ul class="flex-column">
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Client Satisfaction</li>
+                        <li class="list-item mb-3">Innovation and Creativity</li>
+                        <li class="list-item mb-3">Honesty and Transparency</li>
+                        <li class="list-item mb-3">Results-Oriented Solutions</li>
+                        <li class="list-item mb-3">Continuous Learning and Improvement</li>
+                        <li class="list-item mb-3">Strong Client Relationships</li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="who-we-are-wrapper h-100">
-                    <h3>What We Aren't</h3>
+                    <h3>What We don't like</h3>
                     <ul class="flex-column">
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
-                        <li class="list-item mb-3">Humans</li>
+                        <li class="list-item mb-3">Dishonesty and lack of transparency</li>
+                        <li class="list-item mb-3">Mediocre or subpar results</li>
+                        <li class="list-item mb-3">Poor communication and customer service</li>
+                        <li class="list-item mb-3">Inefficient and outdated processes</li>
+                        <li class="list-item mb-3">Disrespect for clients, colleagues, and the community.</li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="who-we-are-wrapper h-100">
-                    <h3>Why We Do</h3>
-                    <ul class="flex-column why-we-do-list">
-                        <li class="list-item mb-3">Digital Marketing</li>
-                        <li class="list-item mb-3">Search Engine Optimisation</li>
-                        <li class="list-item mb-3">Paid Marketing</li>
-                        <li class="list-item mb-3">Content Marketing</li>
-                    </ul>
+                <div class="why-wrapper h-100">
+                    <h3>Our why</h3>
+                    <p>We value the relationships we build with our clients and are dedicated to providing exceptional
+                        customer service. <br /><br />Our goal is to make a positive impact on the lives and businesses
+                        of those we
+                        work with, and to continuously improve and evolve our services to meet their changing needs.</p>
                 </div>
             </div>
         </div>
@@ -144,8 +142,9 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                 <span class="name">Kirby Hibbins - Company Director</span>
             </div>
             <div class="col-md-4">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png"
-                    class="w-100" />
+                <div class="person-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png" />
+                </div>
             </div>
         </div>
     </div>

@@ -6,11 +6,13 @@
                 $custom_logo_id = get_theme_mod('custom_logo');
                 $image_url = wp_get_attachment_image_src($custom_logo_id, 'full')[0];
                 ?>
-                <a href="<?php echo get_site_url(); ?>" class="d-flex footer-icon align-items-center link-dark text-decoration-none">
-                    <img src="<?php echo $image_url; ?>" width="100" />
+                <a href="<?php echo get_site_url(); ?>"
+                    class="d-flex footer-icon align-items-center link-dark text-decoration-none">
+                    <img src="<?php echo $image_url; ?>" width="130" />
                 </a>
-                <p class="footer-desc">Lorem ipsum dolor sit amet, consetetur sadispscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et</p>
+                <p class="footer-desc">We are a digital marketing service provider that helps businesses achieve online
+                    success through customized strategies and expert implementation. Our goal is to drive results and
+                    increase revenue for our clients.</p>
                 <div class="footer-info">
                     <h5 class="mb-0">Give Us a Buzz</h5>
                     <p>1300 000 000</p>

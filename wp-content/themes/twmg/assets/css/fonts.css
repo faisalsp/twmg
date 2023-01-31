@@ -1,35 +1,59 @@
 @font-face {
-    font-family: "LemonRegular";
+    font-family: "LEMON MILK";
+    font-style: normal;
+    font-weight: 400;
     src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Regular.otf") format("opentype");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "LemonMedium";
+    font-family: "LEMON MILK";
+    font-style: normal;
+    font-weight: 500;
     src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Medium.otf") format("opentype");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "LemonBold";
+    font-family: "LEMON MILK";
+    font-style: normal;
+    font-weight: 700;
     src: url("/wp-content/themes/twmg/assets/fonts/LEMONMILK-Bold.otf") format("opentype");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ProximaRegular";
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
     src: url("/wp-content/themes/twmg/assets/fonts/Proxima-Nova-Reg.otf") format("opentype");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ProximaMedium";
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 500;
     src: url("/wp-content/themes/twmg/assets/fonts/Proxima-Nova-Semibold.otf") format("opentype");
     font-display: swap;
 }
 
 @font-face {
-    font-family: "ProximaBold";
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
     src: url("/wp-content/themes/twmg/assets/fonts/Proxima-Nova-Bold.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FuturaDemi";
+    src: url("/wp-content/themes/twmg/assets/fonts/FuturaPTDemi.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FuturaMedium";
+    src: url("/wp-content/themes/twmg/assets/fonts/FuturaPTMedium.otf") format("opentype");
     font-display: swap;
 }

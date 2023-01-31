@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1600px) {
+    :root {
+        --unnamed-font-size-12: 16px;
+        --unnamed-font-size-14: 18px;
+        --unnamed-font-size-16: 20px;
+        --unnamed-font-size-18: 22px;
+        --unnamed-font-size-20: 24px;
+        --unnamed-font-size-22: 26px;
+        --unnamed-font-size-24: 28px;
+        --unnamed-font-size-32: 36px;
+    }
+
+    .contact-us-section .border-box {
+        width: 250px;
+    }
+}

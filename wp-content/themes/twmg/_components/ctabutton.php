@@ -1,10 +1,10 @@
 <?php
-if ($args['class'] == 'homepage') {
-    $text = "Schedule a meeting with our digital marketing experts";
-} elseif ($args['class'] == 'cta-homepage') {
-    $text = "Schedule a Digital Marketing Consultation with our Experts Today!";
-} ?>
+$title = !empty($args['button_text']) ? $args['button_text'] : "";
+$class = !empty($args['class']) ? $args['class'] : "";
+$icon = !empty($args['icon']) ? $args['icon'] : "";
+?>
 
-<a href="#" class="cta-button d-inline-block"><i class="fa-regular fa-calendar"></i>
-    <?php echo $text; ?>
+<a href="#" class="cta-button d-inline-block">
+    <?php echo $icon; ?>
+    <?php echo $title; ?>
 </a>

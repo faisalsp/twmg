@@ -98,6 +98,14 @@ function genesis_sample_enqueue_scripts_styles()
 		'all'
 	);
 
+	wp_enqueue_style(
+		genesis_get_theme_handle() . '-responsive',
+		get_stylesheet_directory_uri() . '/assets/css/responsive.css',
+		[],
+		genesis_get_theme_version(),
+		'all'
+	);
+
 	wp_enqueue_script(
 		genesis_get_theme_handle() . '-bootstrap',
 		get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js',
