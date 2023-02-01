@@ -131,14 +131,6 @@ function genesis_sample_enqueue_scripts_styles()
 	);
 
 	wp_enqueue_style(
-		genesis_get_theme_handle() . '-roboto-fonts',
-		'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
-		[],
-		genesis_get_theme_version(),
-		'all'
-	);
-
-	wp_enqueue_style(
 		genesis_get_theme_handle() . '-custom-fonts',
 		get_stylesheet_directory_uri() . '/assets/css/fonts.css',
 		[],

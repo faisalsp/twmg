@@ -1,4 +1,28 @@
 @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/wp-content/themes/twmg/assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/wp-content/themes/twmg/assets/fonts/Roboto-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/wp-content/themes/twmg/assets/fonts/Roboto-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
     font-family: "LEMON MILK";
     font-style: normal;
     font-weight: 400;
