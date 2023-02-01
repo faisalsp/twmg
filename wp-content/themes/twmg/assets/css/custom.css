@@ -54,6 +54,18 @@ body {
     max-width: 1920px;
 }
 
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
 .main-header {
     padding: 20px 0;
     transition: .3s;
@@ -194,8 +206,9 @@ body {
     font-size: var(--unnamed-font-size-20);
 }
 
-.why-section .cta-button {
+.why-section a.cta-button {
     margin-top: 10px;
+    padding: 15px 40px;
 }
 
 body.home-page,
@@ -255,6 +268,14 @@ body.contact-us-page {
     font-size: 123px;
     margin-bottom: 30px;
     color: var(--unnamed-color-e06226);
+    position: relative;
+}
+
+.grow-section .card .card-body .icon i.fa-chess-queen:after {
+    content: url("/wp-content/themes/twmg/assets/images/icons/icon-awesome-plus.svg");
+    position: absolute;
+    top: -45px;
+    right: -25px;
 }
 
 .grow-section .card {
@@ -423,6 +444,12 @@ body.contact-us-page {
     height: 115%;
     position: absolute;
     top: -100px;
+}
+
+.banner-section .header-dots-section {
+    position: absolute;
+    z-index: 1;
+    top: -97px;
 }
 
 .increase-section .bg-section {

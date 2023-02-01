@@ -1,6 +1,9 @@
 <div class="banner-section">
-    <div class="bg-section z-0"></div>
-    <div class="container overflow-hidden position-relative pe-0 z-1">
+    <div class="header-dots-section w-100 z-0">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/header-dots.png" class="w-100" />
+    </div>
+    <div class="bg-section z-1"></div>
+    <div class="container overflow-hidden position-relative pe-0 z-2">
         <div class="row align-items-center gx-5">
             <div class="col-md-6">
                 <div class="banner-text position-relative">
@@ -32,7 +35,7 @@
             </div>
         </div>
     </div>
-    <div class="container position-relative">
+    <div class="container position-relative z-2">
         <div class="partner-slider">
             <h3>Loved by many <br />Australian companies</h3>
             <ul>
@@ -138,7 +141,7 @@
             </div>
             <div class="col-md-6">
                 <div class="service-image text-end">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop-new.png" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/report.png" />
                 </div>
             </div>
         </div>
