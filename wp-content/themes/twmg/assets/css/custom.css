@@ -165,8 +165,8 @@ body {
     overflow: hidden;
 }
 
-.why-section .container-fluid .service-image img {
-    width: 680px;
+.why-section .service-image {
+    margin-top: -100px;
 }
 
 .why-section .why-item {
@@ -224,7 +224,7 @@ body.contact-us-page {
 }
 
 .why-section {
-    padding: 100px 0;
+    padding: 200px 0;
 }
 
 .increase-section {
@@ -1170,7 +1170,7 @@ body.contact-us-page {
 }
 
 .cta-section .outer-border {
-    background: url("/wp-content/themes/twmg/assets/images/cta-border.svg#svgView(preserveAspectRatio(none))");
+    /* background: url("/wp-content/themes/twmg/assets/images/cta-border.svg#svgView(preserveAspectRatio(none))"); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 30px;

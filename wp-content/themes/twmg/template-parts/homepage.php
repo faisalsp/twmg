@@ -98,8 +98,8 @@
         </div>
     </div>
 </div>
-<div class="why-section">
-    <div class="container pe-0 overflow-hidden">
+<div class="why-section overflow-hidden">
+    <div class="container pe-0">
         <?php $whyarr = array(
             array(
                 "title" => "Proven Results",
@@ -116,27 +116,29 @@
         ); ?>
         <div class="row">
             <div class="col-md-6">
-                <h3>Why Should You Use TWMG as Your Digital Marketing Partners</h3>
-                <?php foreach ($whyarr as $key => $arr): ?>
-                    <div class="why-item">
-                        <div class="d-inline-block align-top bullet">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bullet.svg" />
+                <div class="why-wrapper">
+                    <h3>Why Should You Use TWMG as Your Digital Marketing Partners</h3>
+                    <?php foreach ($whyarr as $key => $arr): ?>
+                        <div class="why-item">
+                            <div class="d-inline-block align-top bullet">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bullet.svg" />
+                            </div>
+                            <div class="d-inline-block align-top description">
+                                <h4>
+                                    <?php echo $arr['title']; ?>
+                                </h4>
+                                <p>
+                                    <?php echo $arr['description']; ?>
+                                </p>
+                            </div>
                         </div>
-                        <div class="d-inline-block align-top description">
-                            <h4>
-                                <?php echo $arr['title']; ?>
-                            </h4>
-                            <p>
-                                <?php echo $arr['description']; ?>
-                            </p>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-                <?php echo get_cta_button(array("icon" => '<i class="fa-regular fa-calendar"></i>', "button_text" => "Schedule a meeting with our digital marketing experts")); ?>
+                    <?php endforeach; ?>
+                    <?php echo get_cta_button(array("icon" => '<i class="fa-regular fa-calendar"></i>', "button_text" => "Schedule a meeting with our digital marketing experts")); ?>
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="service-image text-end">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop.png" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/laptop-new.png" />
                 </div>
             </div>
         </div>
