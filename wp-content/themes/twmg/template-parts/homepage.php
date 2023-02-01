@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image.svg" class="w-100" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image-new.svg" class="w-100" />
             </div>
         </div>
     </div>
