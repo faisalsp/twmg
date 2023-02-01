@@ -4,7 +4,7 @@ $class = !empty($args['class']) ? $args['class'] : "";
 $icon = !empty($args['icon']) ? $args['icon'] : "";
 ?>
 
-<a href="#" class="cta-button d-inline-block">
+<a href="#" class="cta-button">
     <?php echo $icon; ?>
     <?php echo $title; ?>
 </a>
