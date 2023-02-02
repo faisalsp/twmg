@@ -1,6 +1,6 @@
 <?php
-$subtitle = "HOW DO WE HELP YOU GROW";
-$title = "We connect your business with paying customers";
+$subtitle = "GET TO KNOW THE TEAM BEHIND YOUR ONLINE SUCCESS";
+$title = "Discover Our Passion for Driving Results and Our Commitment to Helping Businesses Grow";
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 <div class="about-section">
     <div class="container">
@@ -22,7 +22,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                     <div class="card-title">
                         <h2>Our Partnerships</h2>
                         <div class="partner-list">
-                            <div class="row gx-5 align-items-center">
+                            <div class="row gx-5 align-items-center text-center">
                                 <?php
                                 $arrpartner = array(
                                     "google-partner-logo.png",
@@ -124,7 +124,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 <div class="letter-section">
     <div class="container">
         <div class="row gx-5">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <h3>Letter From The Director</h3>
                 <p>As the Director of this company, I am committed to ensuring that our customers receive the highest
                     level of value and care. We understand that the success of our business is directly tied to the
@@ -141,7 +141,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                 <p>Sincerely,</p>
                 <span class="name">Kirby Hibbins - Company Director</span>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="person-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png" />
                 </div>

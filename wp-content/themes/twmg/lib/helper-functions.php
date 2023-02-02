@@ -68,3 +68,7 @@ function get_cta_button($args = []) {
 function get_top_banner($args = []) {
 	get_template_part("_components/banner", null, $args);
 }
+
+function get_breadcrumbs($args = []) {
+	get_template_part("_components/breadcrumbs", null, $args);
+}

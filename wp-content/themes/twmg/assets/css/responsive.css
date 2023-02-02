@@ -7,10 +7,16 @@
         --unnamed-font-size-20: 24px;
         --unnamed-font-size-22: 26px;
         --unnamed-font-size-24: 28px;
+        --unnamed-font-size-26: 30px;
+        --unnamed-font-size-30: 34px;
         --unnamed-font-size-32: 36px;
     }
 
     .contact-us-section .border-box {
         width: 250px;
+    }
+
+    .top-banner .sub-banner span {
+        top: -27px;
     }
 }

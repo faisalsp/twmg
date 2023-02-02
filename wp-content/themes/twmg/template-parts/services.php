@@ -7,9 +7,9 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         <div class="row gx-5">
             <div class="col-md-6">
                 <p>We're not just a digital marketing agency. We're a business growth agency.</p>
-                <p> We know that as a small to
-                    medium business owner, you're constantly juggling a lot of different tasks: managing your employees,
-                    keeping an eye on your finances, and making sure you have enough time to spend with your family.</p>
+                <p>We know that as a small to medium business owner, you're constantly juggling a lot of different
+                    tasks: managing your employees, keeping an eye on your finances, and making sure you have enough
+                    time to spend with your family.</p>
                 <p>
                     That's why we focus on helping you grow your business—so that you can focus on what matters most to
                     you and your family. Whether it's by increasing sales or growing your customer base, we can provide
@@ -20,7 +20,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
             <div class="col-md-6">
                 <div class="card-image">
                     <img src="https://dummyimage.com/500x310/cccccc/000.png" class="w-100" />
-                    <img src="https://dummyimage.com/500x310/cccccc/000.png" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/graph.png" class="w-100" />
                 </div>
             </div>
         </div>
@@ -44,9 +44,8 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                     </div>
                     <div class="card-body">
                         <h4>Marketing Strategy</h4>
-                        <p>Our company creates custom digital marketing strategies. We work with you to understand your
-                            audience and develop a plan to increase website traffic and conversions. We provide a
-                            comprehensive strategy that can be implemented by your own team or an agency.</p>
+                        <p>Our digital marketing strategy service is designed to help businesses of all sizes maximize
+                            their online reach and drive results.</p>
                         <div class="card-icon">
                             <p>
                                 <i class="fa-solid fa-bell-concierge"></i>
@@ -75,9 +74,9 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                     </div>
                     <div class="card-body">
                         <h4>Marketing Strategy Plus</h4>
-                        <p>We provide a full-service digital marketing package, including strategy and implementation.
-                            Our team will create a personalized plan to increase website traffic and revenue. We handle
-                            all aspects of the process.</p>
+                        <p>Our strategy plus service takes our digital marketing strategy service to the next level. In
+                            addition to developing a customized plan, our team will also handle the implementation of
+                            the plan for you.</p>
                         <div class="card-icon">
                             <p>
                                 <i class="fa-solid fa-chess-knight"></i>
@@ -109,9 +108,10 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 <div class="effective-marketing-section">
     <div class="container">
         <div class="main-text text-center">
-            <h3 class="w-50 mx-auto">Effective Digital Marketing Services to Boost Your Business Growth</h3>
-            <p class="w-50 mx-auto">Our service offering encompasses a wide range of tactics that can help your
-                business thrive in the digital landscape.</p>
+            <h3 class="w-50 mx-auto">Maximize Your Online Reach with Our Cutting-Edge Digital Marketing Techniques</h3>
+            <p class="w-75 mx-auto">A combination of these methods is typically more effective than relying on just one.
+                Also, regularly analyzing and adjusting your digital marketing strategy based on data and results is
+                crucial for sustained traffic growth.</p>
         </div>
         <?php $stepsarr = array(
             "Search Engine Optimisation",
@@ -123,7 +123,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
             "Content Marketing",
             "Branding & Logo Design"
         ); ?>
-        <div class="row gx-5">
+        <div class="row">
             <?php foreach ($stepsarr as $key => $val): ?>
                 <div class="col-md-3 d-flex align-items-stretch">
                     <div class="digital-item text-center">
@@ -135,7 +135,9 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                             <h5>
                                 <?php echo $val; ?>
                             </h5>
-                            <p>Enhancing Your Online Presence through Strategic Search Engine Optimization</p>
+                            <p>Our team of experts will work with you to create a strategy that is tailored to your unique
+                                business goals.Our solutions will help you reach your target audience and drive conversions.
+                            </p>
                             <a href="#">Learn More...</a>
                         </div>
                         <?php if ($key > 5) { ?>
