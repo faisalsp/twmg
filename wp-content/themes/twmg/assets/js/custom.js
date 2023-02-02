@@ -1,39 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-	jQuery('.card-article .slider').slick({
-		dots: false,
-		infinite: false,
-		speed: 300,
-		slidesToShow: 3,
-		prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-		nextArrow: '<button class="next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
-		slidesToScroll: 3,
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
+	if (jQuery("body").hasClass("blog-page")) {
+		jQuery('.card-article .slider').slick({
+			dots: false,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 3,
+			prevArrow: '<button class="prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+			nextArrow: '<button class="next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+			slidesToScroll: 3,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
 				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
-		]
-	});
+			]
+		});
+	}
 
 	let scrollpos = document.documentElement.scrollTop;
 	if (scrollpos > 50) {
