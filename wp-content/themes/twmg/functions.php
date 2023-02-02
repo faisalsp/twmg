@@ -138,7 +138,21 @@ function genesis_sample_enqueue_scripts_styles()
 		'all'
 	);
 
+	wp_enqueue_style(
+		genesis_get_theme_handle() . '-slick',
+		'//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css',
+		[],
+		genesis_get_theme_version(),
+		'all'
+	);
 
+	wp_enqueue_script(
+		genesis_get_theme_handle() . '-slick',
+		'//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+		[],
+		genesis_get_theme_version(),
+		true
+	);
 
 	if (genesis_is_amp()) {
 		wp_enqueue_style(

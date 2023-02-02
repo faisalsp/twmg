@@ -1,4 +1,4 @@
-<?php $location = !empty($args['location']) ? $args['location'] : ""; ?>
+<?php $style = !empty($args['style']) ? $args['style'] : ""; ?>
 <div class="top-banner">
     <div class="container-fluid">
         <div class="breadcrumb">
@@ -10,22 +10,25 @@
         </div>
     </div>
     <div class="container">
-        <div class="main-banner <?php echo !empty($location) ? "with-location" : ""; ?>">
+        <div class="main-banner <?php echo !empty($style) ? $style . "-style" : ""; ?>">
             <div class="row">
-                <?php if ($location != "case-studies") { ?>
-                    <div class="col-md-6">
-                        <?php if (!empty($args['subtitle'])) { ?>
-                            <span>
-                                <?php echo $args['subtitle'] ?>
-                            </span>
-                        <?php } ?>
-                        <?php if (!empty($args['title'])) { ?>
-                            <h1>
-                                <?php echo $args['title']; ?>
-                            </h1>
-                        <?php } ?>
+                <?php if ($style === "subscribe") { ?>
+                    <div class="col-md-12 text-center">
+                        <div class="sub-banner w-50 mx-auto position-relative">
+                            <?php if (!empty($args['title'])) { ?>
+                                <h1>
+                                    <?php echo $args['title']; ?>
+                                </h1>
+                            <?php } ?>
+                            <form>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Email Address" />
+                                    <button class="btn" type="submit">Subscribe for 1 month</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                <?php } else { ?>
+                <?php } elseif ($style === "box") { ?>
                     <div class="col-md-12 text-center">
                         <div class="sub-banner w-50 mx-auto position-relative">
                             <?php if (!empty($args['subtitle'])) { ?>
@@ -44,6 +47,19 @@
                                 </p>
                             <?php } ?>
                         </div>
+                    </div>
+                <?php } else { ?>
+                    <div class="col-md-6">
+                        <?php if (!empty($args['subtitle'])) { ?>
+                            <span>
+                                <?php echo $args['subtitle'] ?>
+                            </span>
+                        <?php } ?>
+                        <?php if (!empty($args['title'])) { ?>
+                            <h1>
+                                <?php echo $args['title']; ?>
+                            </h1>
+                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>

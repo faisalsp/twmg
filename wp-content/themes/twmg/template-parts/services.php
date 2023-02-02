@@ -19,7 +19,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
             </div>
             <div class="col-md-6">
                 <div class="card-image">
-                    <img src="https://dummyimage.com/500x310/cccccc/000.png" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/digital-marketing.jpg" class="w-100" />
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/graph.png" class="w-100" />
                 </div>
             </div>

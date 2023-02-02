@@ -2,7 +2,7 @@
 $subtitle = "HOW DO WE HELP YOU GROW";
 $title = "Case Studies";
 $banner_desc = "We are eager to discuss your business needs, and answer any questions you may have. Enter your details and we will get back to you shortly.";
-echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_desc" => $banner_desc, "location" => "case-studies")); ?>
+echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_desc" => $banner_desc, "style" => "box")); ?>
 <div class="case-studies-section">
     <div class="container">
         <div class="row gx-5">

@@ -72,3 +72,7 @@ function get_top_banner($args = []) {
 function get_breadcrumbs($args = []) {
 	get_template_part("_components/breadcrumbs", null, $args);
 }
+
+function get_card_article($args = []) {
+	get_template_part("_components/card-article", null, $args);
+}
