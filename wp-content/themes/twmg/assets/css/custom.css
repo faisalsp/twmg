@@ -1621,8 +1621,8 @@ body.blog-page .cta-section {
 .cta-banner form .input-group button.btn,
 .top-banner .main-banner.subscribe-style form .input-group button.btn {
     background-color: var(--unnamed-color-e06226);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
     color: var(--unnamed-color-ffffff);
     padding: 15px 30px;
     font-weight: var(--unnamed-font-weight-bold);
