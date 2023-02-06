@@ -106,6 +106,16 @@ function genesis_sample_enqueue_scripts_styles()
 		'all'
 	);
 
+	if (is_single()) {
+		wp_enqueue_script(
+			genesis_get_theme_handle() . '-popper',
+			"https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js",
+			[],
+			genesis_get_theme_version(),
+			true
+		);
+	}
+
 	wp_enqueue_script(
 		genesis_get_theme_handle() . '-bootstrap',
 		get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js',
@@ -207,7 +217,7 @@ function genesis_sample_js_nojs_script()
 			c.remove('no-js');
 			c.add('js');
 		})();
-		//]]>
+			//]]>
 	</script>
 <?php
 }
@@ -295,6 +305,7 @@ add_action('genesis_header', 'genesis_do_nav', 12);
 // Repositions the secondary navigation menu.
 remove_action('genesis_after_header', 'genesis_do_subnav');
 add_action('genesis_footer', 'genesis_do_subnav', 10);
+remove_action('genesis_after_endwhile', 'genesis_posts_nav');
 
 add_filter('wp_nav_menu_args', 'genesis_sample_secondary_menu_args');
 /**

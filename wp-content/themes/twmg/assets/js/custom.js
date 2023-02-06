@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+	// Init Tooltip
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+
 	if (jQuery("body").hasClass("blog-page")) {
 		jQuery('.card-article .slider').slick({
 			dots: false,
