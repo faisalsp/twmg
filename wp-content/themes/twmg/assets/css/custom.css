@@ -1883,7 +1883,8 @@ a.cta-button i {
     max-width: 650px;
 }
 
-.card-article a {
+.card-article a,
+.latest-article-section a {
     text-decoration: none;
 }
 
