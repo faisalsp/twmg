@@ -1,6 +1,6 @@
 <?php $style = !empty($args['style']) ? $args['style'] : ""; ?>
 <div class="top-banner">
-    <div class="container-fluid">
+    <div class="container">
         <div class="breadcrumb">
             <div class="row">
                 <div class="col-md-12">

@@ -48,14 +48,13 @@ body {
 .container {
     margin-right: auto;
     margin-left: auto;
-    max-width: none;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .container,
 .container-fluid {
-    max-width: 1920px;
+    max-width: 1170px;
 }
 
 .z-0 {
@@ -204,7 +203,7 @@ body {
 }
 
 .why-section .service-image {
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 
 .why-section .why-item {
@@ -549,7 +548,7 @@ body.single-blog-page {
     font-weight: var(--unnamed-font-weight-bold);
     border-radius: 20px;
     padding: 15px 30px;
-    padding-right: 70px;
+    padding-right: 80px;
 }
 
 .faqs-section .left-item button {

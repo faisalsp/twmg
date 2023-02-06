@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initHeight() {
-	let whymain = ".home-page .why-section .why-wrapper";
-	let whyimage = ".home-page .why-section .service-image img";
-	heightChecker(whymain, whyimage, 160);
+	// let whymain = ".home-page .why-section .why-wrapper";
+	// let whyimage = ".home-page .why-section .service-image img";
+	// heightChecker(whymain, whyimage, 160);
 
 	let lettermain = ".about-us-page .letter-section";
 	let letterimage = ".about-us-page .letter-section .person-image img";

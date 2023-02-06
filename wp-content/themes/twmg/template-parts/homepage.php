@@ -117,7 +117,7 @@
                 "description" => "We understand that every business is unique, which is why we take a customized approach to digital marketing. We'll work closely with you to understand your business goals and develop a tailored marketing strategy that is optimized for your specific needs.",
             )
         ); ?>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="why-wrapper">
                     <h3>Why Should You Use TWMG as Your Digital Marketing Partners</h3>
@@ -140,8 +140,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="service-image text-end">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/report.png" />
+                <div class="service-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-message.png" class="w-100" />
                 </div>
             </div>
         </div>

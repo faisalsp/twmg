@@ -1,5 +1,5 @@
 <nav class="main-header sticky-top navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
+    <div class="container">
         <?php
         $custom_logo_id = get_theme_mod('custom_logo');
         $image_url = wp_get_attachment_image_src($custom_logo_id, 'full')[0];
