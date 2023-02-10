@@ -7,14 +7,6 @@
         <div class="row align-items-center gx-5">
             <div class="col-md-6">
                 <div class="banner-text position-relative">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-arrow.svg"
-                        width="90" />
-                    <h1>More leads, more customers,<br />more revenue.</h1>
-                    <p class="text-white">Maximize Your Online Potential with a Customized Digital Marketing Plan that
-                        will increase your visibility, drive more leads and skyrocket your sales.</p>
-                    <div class="banner-button">
-                        <?php echo get_cta_button(array("icon" => '<i class="fa-regular fa-calendar"></i>', "button_text" => "Schedule a meeting with our digital marketing experts")); ?>
-                    </div>
                     <div class="google-wrapper">
                         <div class="google-rate">
                             <i class="fa-brands fa-google"></i>
@@ -28,10 +20,19 @@
                             <p>Rated 4.8 on Google</p>
                         </div>
                     </div>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-arrow.svg"
+                        width="90" />
+                    <h1>Digital strategies for More leads, more customers, more revenue.</h1>
+                    <p class="text-white">Maximize Your Online Potential with a Customized Digital Marketing Plan that
+                        will increase your visibility, drive more leads and skyrocket your sales.</p>
+                    <div class="banner-button">
+                        <?php echo get_cta_button(array("style" => 'subscribe', "button_text" => "Get a free digital visibility report")); ?>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image-new.svg" class="w-100" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image-new.svg"
+                    class="w-100" />
             </div>
         </div>
     </div>
@@ -141,7 +142,8 @@
             </div>
             <div class="col-md-6">
                 <div class="service-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-message.png" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-message.png"
+                        class="w-100" />
                 </div>
             </div>
         </div>
@@ -169,48 +171,43 @@
                 "image" => "steps/step-3.svg"
             )
         ); ?>
-        <div class="row align-items-center">
-            <?php foreach ($stepsarr as $key => $arr): ?>
-                <?php if ($key % 2 == 0) { ?>
-                    <div class="col-md-6">
-                        <span class="step-number">
-                            <?php echo $key + 1; ?>
-                        </span>
-                        <h4>
-                            <?php echo $arr['title']; ?>
-                        </h4>
-                        <p>
-                            <?php echo $arr['description']; ?>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="step-image text-end">
-                            <img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/<?php echo $arr['image']; ?>" />
-                        </div>
-                    </div>
-                <?php } else { ?>
-                    <div class="col-md-6">
-                        <div class="step-image">
-                            <img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/<?php echo $arr['image']; ?>" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <span class="step-number">
-                            <?php echo $key + 1; ?>
-                        </span>
-                        <h4>
-                            <?php echo $arr['title']; ?>
-                        </h4>
-                        <p>
-                            <?php echo $arr['description']; ?>
-                        </p>
-                    </div>
+    </div>
+    <div class="steps-detail-section">
+        <div class="container">
+            <div class="row gx-5">
 
-                <?php } ?>
+                <div class="col-md-6">
+                    <?php foreach ($stepsarr as $key => $arr): ?>
+                        <div class="step-content pe-5">
+                            <div class="step-detail">
+                                <span class="step-number">
+                                    <?php echo $key + 1; ?>
+                                </span>
+                                <h4>
+                                    <?php echo $arr['title']; ?>
+                                </h4>
+                                <p>
+                                    <?php echo $arr['description']; ?>
+                                </p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="col-md-6">
+                    <div class="step-image text-end">
+                        <?php foreach ($stepsarr as $key => $arr): ?>
+                            <div
+                                class="image-content image-<?php echo $key; ?>                             <?php echo $key == 0 ? "active" : ""; ?>">
+                                <img
+                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/<?php echo $arr['image']; ?>" />
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
 
-            <?php endforeach; ?>
+
+
+            </div>
         </div>
     </div>
 </div>
@@ -235,8 +232,7 @@
                     "icon" => '<i class="fa-solid fa-chess-queen"></i>',
                     "button_text" => "Read more about Strategy+",
                 )
-            );
-            foreach ($growarr as $val): ?>
+            ); foreach ($growarr as $val): ?>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
@@ -263,6 +259,32 @@
             </div>
         </div>
 
+    </div>
+</div>
+<div class="letter-section">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-7">
+                <h3>Something about if we don't hit our goals - you don't pay</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum.</p>
+                <ul>
+                    <li>Benefit for the business number 1</li>
+                    <li>Benefit for the business number 1</li>
+                    <li>Benefit for the business number 1</li>
+                </ul>
+
+                <div class="banner-button">
+                    <?php echo get_cta_button(array("style" => 'subscribe', "button_text" => "Get a free digital visibility report")); ?>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="person-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png" />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="video-section text-center">

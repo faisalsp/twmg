@@ -1,7 +1,11 @@
 <?php
-$subtitle = "SOCIAL MEDIA MARKETING";
-$title = "10 Ways To Grow Your Audience on Youtube";
-$banner_desc = "Last checked and updated on 26 October 2022";
+$post_categories = get_post_primary_category(get_the_ID(), 'category');
+$primary_category = $post_categories['primary_category'];
+
+$subtitle = $primary_category->name;
+$title = get_the_title();
+$modified_time = get_the_modified_date();
+$banner_desc = "Last checked and updated on " . $modified_time;
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_desc" => $banner_desc, "style" => "box")); ?>
 <div class="single-blog-section">
     <div class="container">

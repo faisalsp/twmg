@@ -32,6 +32,9 @@ function genesis_sample_localization_setup()
 // Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
+// Adds custom shortcode
+require_once get_stylesheet_directory() . '/lib/shortcode.php';
+
 // Adds image upload and color select to Customizer.
 require_once get_stylesheet_directory() . '/lib/customize.php';
 
@@ -217,8 +220,7 @@ function genesis_sample_js_nojs_script()
 			c.remove('no-js');
 			c.add('js');
 		})();
-			//]]>
-	</script>
+					//]]></script>
 <?php
 }
 
@@ -360,6 +362,29 @@ function genesis_sample_comments_gravatar($args)
 
 }
 
+add_filter('genesis_breadcrumb_args', 'genesis_custom_breadcrumb_args');
+function genesis_custom_breadcrumb_args($args)
+{
+	$args['home'] = 'Home'; // Home Page
+	$args['sep'] = ''; // Separator
+	$args['list_sep'] = ', ';
+	$args['prefix'] = '<div class="custom-breadcrumb flex-row">';
+	$args['suffix'] = '</div>';
+	$args['heirarchial_attachments'] = true;
+	$args['heirarchial_categories'] = true;
+	$args['display'] = true;
+	$args['labels']['prefix'] = '';
+	$args['labels']['author'] = '';
+	$args['labels']['category'] = '';
+	$args['labels']['tag'] = '';
+	$args['labels']['date'] = '';
+	$args['labels']['search'] = '';
+	$args['labels']['tax'] = '';
+	$args['labels']['post_type'] = '';
+	$args['labels']['404'] = '';
+	return $args;
+}
+
 add_filter('genesis_markup_site-inner', '__return_null');
 add_filter('genesis_markup_content-sidebar-wrap', '__return_null');
 add_filter('genesis_markup_content-sidebar-wrap_output', '__return_false');
@@ -405,3 +430,37 @@ function cc_mime_types($mimes)
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+function get_post_primary_category($post_id, $term = 'category', $return_all_categories = false)
+{
+	$return = array();
+
+	if (class_exists('WPSEO_Primary_Term')) {
+		// Show Primary category by Yoast if it is enabled & set
+		$wpseo_primary_term = new WPSEO_Primary_Term($term, $post_id);
+		$primary_term = get_term($wpseo_primary_term->get_primary_term());
+
+		if (!is_wp_error($primary_term)) {
+			$return['primary_category'] = $primary_term;
+		}
+	}
+
+	if (empty($return['primary_category']) || $return_all_categories) {
+		$categories_list = get_the_terms($post_id, $term);
+
+		if (empty($return['primary_category']) && !empty($categories_list)) {
+			$return['primary_category'] = $categories_list[0]; //get the first category
+		}
+		if ($return_all_categories) {
+			$return['all_categories'] = array();
+
+			if (!empty($categories_list)) {
+				foreach ($categories_list as &$category) {
+					$return['all_categories'][] = $category->term_id;
+				}
+			}
+		}
+	}
+
+	return $return;
+}
