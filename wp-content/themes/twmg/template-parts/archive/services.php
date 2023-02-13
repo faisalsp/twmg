@@ -1,7 +1,7 @@
 <?php
 $subtitle = "OUR SERVICES";
 $title = "How we help you to grow your digital brand and find more paying customers";
-$permalink = strpos(get_site_url(), "twmgdevs") === false ? get_permalink(59) : get_permalink(33);
+$permalink = strpos(get_site_url(), "twmgdevs") === false ? get_permalink(59) : get_permalink(18802);
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 <div class="our-services-section">
     <div class="container">
