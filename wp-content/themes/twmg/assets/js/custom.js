@@ -102,12 +102,14 @@ function stickyImage(last) {
 	jQuery(".step-content").each(function (index) {
 		let stepcontent = jQuery(this).offset().top;
 		if (curr > last ){
-			let stepcontent = jQuery(this).offset().top - 300;
+			// scrolldown
+			let stepcontent = jQuery(this).offset().top - 550;
 			if (parseInt(window.scrollY) > parseInt(stepcontent) && parseInt(window.scrollY) < parseInt(stepcontent) + 100) {
 				jQuery(".step-image .image-content").not(".image-" + index).removeClass("active");
 				jQuery(".step-image .image-content.image-" + index).addClass("active");
 			}
 		} else {
+			// scrollup
 			if (parseInt(window.scrollY) > parseInt(stepcontent) && parseInt(window.scrollY) < parseInt(stepcontent) + 300) {
 				jQuery(".step-image .image-content").not(".image-" + index).removeClass("active");
 				jQuery(".step-image .image-content.image-" + index).addClass("active");

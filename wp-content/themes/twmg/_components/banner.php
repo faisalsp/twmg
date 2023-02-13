@@ -60,6 +60,11 @@
                                 <?php echo $args['title']; ?>
                             </h1>
                         <?php } ?>
+                        <?php if (!empty($args['banner_desc'])) { ?>
+                            <p class="banner-desc">
+                                <?php echo $args['banner_desc']; ?>
+                            </p>
+                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>

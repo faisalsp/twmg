@@ -1,12 +1,5 @@
 <?php
 
-/**
-*
-* Template Name: Our Services Template
-*
-*/
-
-
 add_filter('body_class', 'landing_body_class');
 
 /**
@@ -34,6 +27,9 @@ remove_action('genesis_entry_header', 'genesis_post_info', 5);
 remove_action('genesis_entry_content', 'genesis_do_post_content');
 remove_action('genesis_before_header', 'genesis_skip_links', 5);
 
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+remove_action( 'genesis_before_loop', 'genesis_do_cpt_archive_title_description' );
+
 // Removes Skip Links.
 add_action('wp_enqueue_scripts', 'genesis_sample_dequeue_skip_links');
 
@@ -57,7 +53,7 @@ function genesis_sample_dequeue_skip_links()
 
 function custom_template_meta_loop()
 {
-    get_template_part("template-parts/services");
+    get_template_part("template-parts/archive/services");
 }
 
 

@@ -1,9 +1,7 @@
 <?php
 $subtitle = "CASE STUDIES";
 $title = get_the_title();
-$modified_time = get_the_modified_date();
-$banner_desc = "Last checked and updated on " . $modified_time;
-echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_desc" => $banner_desc)); ?>
+echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 <div class="single-case-studies-section">
     <div class="container">
         <div class="case-studies-detail mx-auto">

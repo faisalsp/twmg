@@ -1,6 +1,7 @@
 <?php
 $subtitle = "OUR SERVICES";
 $title = "How we help you to grow your digital brand and find more paying customers";
+$permalink = strpos(get_site_url(), "twmgdevs") === false ? get_permalink(59) : get_permalink(33);
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
 <div class="our-services-section">
     <div class="container">
@@ -138,7 +139,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
                             <p>Our team of experts will work with you to create a strategy that is tailored to your unique
                                 business goals.Our solutions will help you reach your target audience and drive conversions.
                             </p>
-                            <a href="#">Learn More...</a>
+                            <a href="<?php echo $permalink; ?>">Learn More...</a>
                         </div>
                         <?php if ($key > 5) { ?>
                             <div class="recommended">
