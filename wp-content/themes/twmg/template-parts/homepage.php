@@ -1,4 +1,4 @@
-<div class="banner-section">
+<div class="banner-section small-padding">
     <div class="header-dots-section w-100 z-0">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/header-dots.png" class="w-100" />
     </div>
@@ -77,23 +77,24 @@
     )
 );
 ?>
-<div class="increase-section">
+<div class="increase-section small-padding">
     <div class="bg-section z-0"></div>
     <div class="container position-relative z-1">
         <div class="row gx-5 text-center">
             <div class="col-12">
-                <h3 class="w-50 mx-auto">Unlock the Full Potential of Your Business with Digital Marketing Strategy</h3>
+                <h3 class="w-50 mx-auto main-heading-white mb-5">Unlock the Full Potential of Your Business with Digital
+                    Marketing Strategy</h3>
             </div>
             <?php foreach ($increasearr as $key => $arr): ?>
                 <div class="col-md-4">
                     <?php $blueclass = $key % 2 == 0 ? "" : "bg-blue-twmg"; ?>
-                    <div class="increase-item h-100 <?php echo $blueclass; ?>">
+                    <div class="increase-item h-100 <?php echo $blueclass; ?> p-4">
                         <img
                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/<?php echo $arr["image"]; ?>" />
                         <h4>
                             <?php echo $arr['title']; ?>
                         </h4>
-                        <p>
+                        <p class="common-body">
                             <?php echo $arr['description']; ?>
                         </p>
                     </div>
@@ -102,7 +103,7 @@
         </div>
     </div>
 </div>
-<div class="why-section overflow-hidden">
+<div class="why-section overflow-hidden long-padding">
     <div class="container pe-0">
         <?php $whyarr = array(
             array(
@@ -121,17 +122,17 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="why-wrapper">
-                    <h3>Why Should You Use TWMG as Your Digital Marketing Partners</h3>
+                    <h2 class="mb-4 main-heading">Why Should You Use TWMG as Your Digital Marketing Partners</h2>
                     <?php foreach ($whyarr as $key => $arr): ?>
                         <div class="why-item">
                             <div class="d-inline-block align-top bullet">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bullet.svg" />
                             </div>
                             <div class="d-inline-block align-top description">
-                                <h4>
+                                <h3 class="text-dark-blue-twmg">
                                     <?php echo $arr['title']; ?>
-                                </h4>
-                                <p>
+                                </h3>
+                                <p class="mb-0 small-font text-dark-blue-twmg">
                                     <?php echo $arr['description']; ?>
                                 </p>
                             </div>
@@ -149,10 +150,11 @@
         </div>
     </div>
 </div>
-<div class="steps-section">
+<div class="steps-section small-padding">
     <div class="container">
-        <h3 class="mx-auto text-center">Three Proven Steps to Digital Marketing Success</h3>
-        <p class="w-75 mx-auto text-center">Discover the Power of a Tailored Digital Marketing Strategy: Unlock Your
+        <h2 class="mx-auto text-center mb-2 main-heading">Three Proven Steps to Digital Marketing Success</h2>
+        <p class="w-75 mx-auto text-center main-content mb-5">Discover the Power of a Tailored Digital Marketing Strategy:
+            Unlock Your
             Business's Full Potential with Our Proven Three-Step Process to Digital Marketing Success</p>
         <?php $stepsarr = array(
             array(
@@ -183,10 +185,10 @@
                                 <span class="step-number">
                                     <?php echo $key + 1; ?>
                                 </span>
-                                <h4>
+                                <h5 class="text-blue-twmg">
                                     <?php echo $arr['title']; ?>
-                                </h4>
-                                <p>
+                                </h5>
+                                <p class="main-content">
                                     <?php echo $arr['description']; ?>
                                 </p>
                             </div>
@@ -197,7 +199,7 @@
                     <div class="step-image text-end">
                         <?php foreach ($stepsarr as $key => $arr): ?>
                             <div
-                                class="image-content image-<?php echo $key; ?>                             <?php echo $key == 0 ? "active" : ""; ?>">
+                                class="image-content image-<?php echo $key; ?>                                             <?php echo $key == 0 ? "active" : ""; ?>">
                                 <img
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/<?php echo $arr['image']; ?>" />
                             </div>
@@ -211,10 +213,10 @@
         </div>
     </div>
 </div>
-<div class="grow-section text-center">
+<div class="grow-section text-center long-padding">
     <div class="container">
-        <h3>Elevate Your Online Presence with Our Digital Marketing Services</h3>
-        <p class="mx-auto section-desc">Maximize Your Reach, Boost Your Bottom Line, and Stay Ahead of the
+        <h2 class="main-heading w-50 mx-auto mb-2">Elevate Your Online Presence with Our Digital Marketing Services</h2>
+        <p class="mx-auto main-content w-50 mb-5">Maximize Your Reach, Boost Your Bottom Line, and Stay Ahead of the
             Competition with Our Expertly Crafted Digital Marketing Services
         </p>
         <div class="row">
@@ -239,10 +241,10 @@
                             <div class="icon">
                                 <?php echo $val['icon']; ?>
                             </div>
-                            <h4>
+                            <h2 class="text-dark-blue-twmg mb-3">
                                 <?php echo $val['title']; ?>
-                            </h4>
-                            <p>
+                            </h2>
+                            <p class="small-font text-dark-blue-twmg mb-4">
                                 <?php echo $val['description']; ?>
                             </p>
                             <?php echo get_cta_button(array("button_text" => $val['button_text'])); ?>
@@ -261,15 +263,16 @@
 
     </div>
 </div>
-<div class="letter-section">
+<div class="letter-section small-margin medium-padding bg-dark-blue-twmg position-relative">
     <div class="container">
         <div class="row gx-5">
             <div class="col-md-7">
-                <h3>Something about if we don't hit our goals - you don't pay</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                <h2 class="main-heading-white">Something about if we don't hit our goals - you don't pay</h2>
+                <p class="main-content-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                     et ea rebum.</p>
-                <ul>
+                <ul class="small-margin p-0">
                     <li>Benefit for the business number 1</li>
                     <li>Benefit for the business number 1</li>
                     <li>Benefit for the business number 1</li>
@@ -287,9 +290,9 @@
         </div>
     </div>
 </div>
-<div class="video-section text-center">
+<div class="video-section text-center small-padding">
     <div class="container">
-        <h3>How we helped a craft beer company achieve a 20% increase in turnover</h3>
+        <h2 class="main-heading mb-5">How we helped a craft beer company achieve a 20% increase in turnover</h2>
         <div class="video-wrapper">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/craft-beer.png" />
             <i class="fa-solid fa-play"></i>
@@ -300,10 +303,10 @@
         </div>
     </div>
 </div>
-<div class="faqs-section text-center">
+<div class="faqs-section text-center small-padding mb-5">
     <div class="faqs-wrapper container">
-        <h3>FAQS</h3>
-        <p class="w-50 mx-auto section-desc">Find the Answers You Need with Our Frequently Asked Questions</p>
+        <h2 class="main-heading mb-2">FAQS</h2>
+        <p class="w-50 mx-auto main-content mb-4">Find the Answers You Need with Our Frequently Asked Questions</p>
         <div class="row">
             <div class="col-md-6">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
@@ -341,7 +344,9 @@
             </div>
         </div>
     </div>
-    <div class="cta-section">
+</div>
+<div class="cta-main-section">
+    <div class="cta-section small-padding">
         <?php
         $title = "Maximize Your Earnings with Our Proven Digital Marketing Strategies. Book Your Appointment Now";
         $desc = "Unlock the Full Potential of Your Business and See a Significant Increase in Your Bottom Line with Our Customized and Results-Driven Digital Marketing Solutions";

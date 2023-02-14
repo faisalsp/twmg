@@ -9,11 +9,11 @@ $style = !empty($args['style']) ? $args['style'] : "";
     <form class="cta-subscribe-form">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="www.yourwebsite.com.au" />
-            <button class="btn" type="submit"><?php echo $title; ?></button>
+            <button class="btn orange-button rounded-0" type="submit"><?php echo $title; ?></button>
         </div>
     </form>
 <?php else : ?>
-    <a href="#" class="cta-button">
+    <a href="#" class="cta-button orange-button">
         <?php echo $icon; ?>
         <?php echo $title; ?>
     </a>

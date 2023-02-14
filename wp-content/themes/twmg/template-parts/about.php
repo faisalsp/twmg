@@ -2,7 +2,7 @@
 $subtitle = "GET TO KNOW THE TEAM BEHIND YOUR ONLINE SUCCESS";
 $title = "Discover Our Passion for Driving Results and Our Commitment to Helping Businesses Grow";
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
-<div class="about-section">
+<div class="about-section small-padding">
     <div class="container">
         <div class="row gx-5">
             <div class="col-md-6">
@@ -49,20 +49,20 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         </div>
     </div>
 </div>
-<div class="about-image-section">
+<div class="about-image-section medium-padding">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="about-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/discuss-image.png"
-                        class="w-100" />
+                        class="w-100 br-20" />
                     <span class="text-center">Image showing whatever the blog is about</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="about-description-section">
+<div class="about-description-section pb-5">
     <div class="container">
         <div class="row gx-5">
             <div class="col-md-6">
@@ -81,12 +81,12 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         </div>
     </div>
 </div>
-<div class="who-we-are-section">
+<div class="who-we-are-section long-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="who-we-are-wrapper h-100">
-                    <h3>what we value</h3>
+                    <h2 class="main-heading">what we value</h2>
                     <ul class="flex-column">
                         <li class="list-item mb-3">Client Satisfaction</li>
                         <li class="list-item mb-3">Innovation and Creativity</li>
@@ -99,7 +99,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
             </div>
             <div class="col-md-4">
                 <div class="who-we-are-wrapper h-100">
-                    <h3>What We don't like</h3>
+                    <h2 class="main-heading">What We don't like</h2>
                     <ul class="flex-column">
                         <li class="list-item mb-3">Dishonesty and lack of transparency</li>
                         <li class="list-item mb-3">Mediocre or subpar results</li>
@@ -111,7 +111,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
             </div>
             <div class="col-md-4">
                 <div class="why-wrapper h-100">
-                    <h3>Our why</h3>
+                    <h2 class="main-heading">Our why</h2>
                     <p>We value the relationships we build with our clients and are dedicated to providing exceptional
                         customer service. <br /><br />Our goal is to make a positive impact on the lives and businesses
                         of those we
@@ -121,11 +121,11 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         </div>
     </div>
 </div>
-<div class="letter-section">
+<div class="letter-section medium-padding position-relative">
     <div class="container">
         <div class="row gx-5">
             <div class="col-md-7">
-                <h3>Letter From The Director</h3>
+                <h2 class="main-heading-white">Letter From The Director</h2>
                 <p>As the Director of this company, I am committed to ensuring that our customers receive the highest
                     level of value and care. We understand that the success of our business is directly tied to the
                     satisfaction of our customers.</p>
@@ -149,11 +149,11 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         </div>
     </div>
 </div>
-<div class="our-team-section">
+<div class="our-team-section medium-padding">
     <div class="container">
         <div class="row gx-5">
             <div class="col-12">
-                <h3 class="text-center">Our Executive Team</h3>
+                <h2 class="main-heading text-center mb-5">Our Executive Team</h2>
             </div>
             <?php
             $teamarr = array(
@@ -178,12 +178,12 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
             <?php foreach ($teamarr as $team): ?>
                 <div class="col-md-3">
                     <img src="https://dummyimage.com/350x350/cccccc/000.png" class="w-100" />
-                    <p class="text-center">
+                    <h3 class="mt-4 mb-0 blog-heading-blue text-center">
                         <?php echo $team['name']; ?>
-                    </p>
-                    <span class="text-center">
+                    </h3>
+                    <p class="text-center main-content mb-0">
                         <?php echo $team['title']; ?>
-                    </span>
+                    </p>
                 </div>
             <?php endforeach; ?>
         </div>

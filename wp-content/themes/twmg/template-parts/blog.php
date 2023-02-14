@@ -1,21 +1,21 @@
 <?php
 $title = "Unlock the Secrets to Business Growth: Sign Up for Our Monthly Email Tips Today!";
 echo get_top_banner(array("title" => $title, "style" => "subscribe")); ?>
-<div class="blog-featured-section">
+<div class="blog-featured-section small-padding">
     <div class="container">
-        <h3>Featured</h3>
+        <h2 class="main-heading mb-4">Featured</h2>
         <?php echo get_card_article(array("direction" => "row")); ?>
     </div>
 </div>
 <div class="latest-article-section">
     <div class="container">
-        <h3>Latest</h3>
+        <h2 class="main-heading mb-4">Latest</h2>
         <div class="row gx-5">
             <div class="col-md-8">
                 <?php echo get_card_article(array("direction" => "column")); ?>
             </div>
             <div class="col-md-4">
-                <div class="categories-widget">
+                <div class="categories-widget br-20 mb-4">
                     <div class="search">
                         <input type="text" class="form-control" placeholder="Search">
                         <button class="btn btn-primary">
@@ -35,7 +35,7 @@ echo get_top_banner(array("title" => $title, "style" => "subscribe")); ?>
                         </ul>
                     </div>
                 </div>
-                <div class="subscribe-widget">
+                <div class="subscribe-widget bg-dark-blue-twmg br-20">
                     <h5 class="text-center">Unlock the Secrets to Business Growth: Sign Up for Our Monthly Email Tips
                         Today!</h5>
                     <input type="email" class="form-control" placeholder="Enter email">
@@ -45,15 +45,15 @@ echo get_top_banner(array("title" => $title, "style" => "subscribe")); ?>
         </div>
     </div>
 </div>
-<div class="blog-featured-section">
+<div class="blog-featured-section small-padding">
     <div class="container">
-        <h3>Search Engine Optimisation</h3>
+        <h2 class="main-heading mb-4">Search Engine Optimisation</h2>
         <?php echo get_card_article(array("style" => "slider")); ?>
     </div>
 </div>
 <div class="categories-section">
     <div class="container">
-        <h3>All Categories</h3>
+        <h2 class="main-heading mb-4">All Categories</h2>
         <ul class="nav flex-row">
             <?php for ($i = 0; $i < 12; $i++): ?>
                 <li><a href="#">Business Growth</a></li>
@@ -61,21 +61,21 @@ echo get_top_banner(array("title" => $title, "style" => "subscribe")); ?>
         </ul>
     </div>
 </div>
-<div class="blog-featured-section">
+<div class="blog-featured-section small-padding">
     <div class="container">
-        <h3>Search Engine Optimisation</h3>
+        <h2 class="main-heading mb-4">Search Engine Optimisation</h2>
         <?php echo get_card_article(array("style" => "slider")); ?>
     </div>
 </div>
-<div class="blog-featured-section">
+<div class="blog-featured-section small-padding">
     <div class="container">
-        <h3>Search Engine Optimisation</h3>
+        <h2 class="main-heading mb-4">Search Engine Optimisation</h2>
         <?php echo get_card_article(array("style" => "slider")); ?>
     </div>
 </div>
-<div class="blog-featured-section">
+<div class="blog-featured-section small-padding">
     <div class="container">
-        <h3>Search Engine Optimisation</h3>
+        <h2 class="main-heading mb-4">Search Engine Optimisation</h2>
         <?php echo get_card_article(array("style" => "slider")); ?>
     </div>
 </div>

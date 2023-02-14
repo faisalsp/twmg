@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div class="container medium-padding">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
             <div class="col col-md-4 mb-3">
                 <?php

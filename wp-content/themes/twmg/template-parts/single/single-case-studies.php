@@ -2,7 +2,7 @@
 $subtitle = "CASE STUDIES";
 $title = get_the_title();
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
-<div class="single-case-studies-section">
+<div class="single-case-studies-section extra-small-padding">
     <div class="container">
         <div class="case-studies-detail mx-auto">
             <?php the_content(); ?>

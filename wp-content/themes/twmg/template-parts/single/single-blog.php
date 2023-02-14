@@ -43,14 +43,14 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_de
                 <h3 class="text-center">Related Posts</h3>
                 <?php for ($i = 0; $i < 3; $i++): ?>
                     <div class="related-item">
-                        <h5>Business Growth</h5>
-                        <h4>10 ways to reduce the cost of your ads that you can do right now reduce the cost of your ads
+                        <h5 class="blog-category-orange">Business Growth</h5>
+                        <h4 class="blog-heading-blue">10 ways to reduce the cost of your ads that you can do right now reduce the cost of your ads
                             that you</h4>
                     </div>
                 <?php endfor; ?>
             </div>
             <div class="related-categories-section">
-                <h3 class="text-center">Related Categories</h3>
+                <h3 class="text-center main-heading">Related Categories</h3>
                 <ul class="nav flex-row">
                     <?php for ($i = 0; $i < 8; $i++): ?>
                         <li><a href="#">Business Growth</a></li>

@@ -5,13 +5,13 @@ $style = !empty($args['style']) ? $args['style'] : "";
 ?>
 <div class="container">
     <div class="outer-border mx-auto">
-        <div class="cta-banner text-center">
+        <div class="cta-banner text-center br-20 bg-dark-blue-twmg">
             <div class="title">
-                <h4>
+                <h2 class="main-heading-white">
                     <?php echo $title; ?>
-                </h4>
+                </h2>
             </div>
-            <p>
+            <p class="p-3 main-content-white">
                 <?php echo $desc; ?>
             </p>
             <?php
@@ -19,7 +19,7 @@ $style = !empty($args['style']) ? $args['style'] : "";
                 <form class="w-75 mx-auto">
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="Email Address" />
-                        <button class="btn" type="submit">Subscribe for 1 month</button>
+                        <button class="btn orange-button" type="submit">Subscribe for 1 month</button>
                     </div>
                 </form>
             <?php } else {

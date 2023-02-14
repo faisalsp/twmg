@@ -4,22 +4,22 @@ $title = "Case Studies";
 $permalink = strpos(get_site_url(), "twmgdevs") === false ? get_permalink(53) : get_permalink(18798);
 $banner_desc = "We are eager to discuss your business needs, and answer any questions you may have. Enter your details and we will get back to you shortly.";
 echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_desc" => $banner_desc, "style" => "box")); ?>
-<div class="case-studies-section">
+<div class="case-studies-section long-padding">
     <div class="container">
         <div class="row gx-5">
             <div class="col-12">
                 <a href="<?php echo $permalink; ?>">
-                    <div class="featured-item text-center position-relative">
-                        <div class="featured-body">
+                    <div class="featured-item text-center position-relative br-20 mb-3">
+                        <div class="featured-body long-margin">
                             <i class="fa-brands fa-apple"></i>
-                            <h4>SEARCH ENGINE OPTIMISATION</h4>
+                            <h4 class="proxima-orange-bold">SEARCH ENGINE OPTIMISATION</h4>
                             <h3 class="mx-auto">How we took Apple computers from working in their garage to a fortune
                                 500
                                 company</h3>
                         </div>
 
                         <div class="read-more">
-                            <p class="mb-0">Read More</p>
+                            <h6 class="mb-0 text-blue-twmg">Read More</h6>
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                     </div>
@@ -28,13 +28,13 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_de
             <?php for ($i = 0; $i < 4; $i++): ?>
                 <div class="col-md-6">
                     <a href="<?php echo $permalink; ?>">
-                        <div class="case-item text-center position-relative">
-                            <div class="featured-body">
+                        <div class="case-item text-center position-relative mt-5 br-20">
+                            <div class="featured-body small-margin">
                                 <i class="fa-brands fa-apple"></i>
-                                <h4>Digital Marketing</h4>
+                                <h4 class="proxima-orange-bold">Digital Marketing</h4>
                                 <h3 class="mx-auto">How we helped increase turnover by 130% for this large Aussie retailer
                                 </h3>
-                                <div class="excerpt">
+                                <div class="excerpt px-4">
                                     <p>Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonumy eirmod
                                         tempor
                                         invidunt ut labore et dolore magna aliqu yam erat, sed diam voluptua. ipsum dolor
@@ -44,7 +44,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_de
                                 </div>
                             </div>
                             <div class="read-more">
-                                <p class="mb-0">Read More</p>
+                                <h6 class="mb-0 text-blue-twmg pt-3">Read More</h6>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle, "banner_de
         </div>
     </div>
 </div>
-<div class="cta-section">
+<div class="cta-section small-padding">
     <?php
     $title = "Get similar life changing results in your business. Book Your Appointment Now";
     $desc = "Unlock the Full Potential of Your Business and See a Significant Increase in Your Bottom Line with Our Customized and Results-Driven Digital Marketing Solutions";
