@@ -353,7 +353,7 @@ h5, h6 {
     padding-left: 0.5rem;
 }
 
-.main-header .navbar-nav li.current_page_item a,
+.main-header .navbar-nav li.current-menu-item a,
 .main-header .navbar-nav li a:hover {
     color: var(--unnamed-color-e06226);
 }
