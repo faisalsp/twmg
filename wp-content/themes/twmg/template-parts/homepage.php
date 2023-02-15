@@ -1,6 +1,7 @@
 <div class="banner-section small-padding">
     <div class="header-dots-section w-100 z-0">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/header-dots.png" class="w-100" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/header-dots.png" alt="header dots"
+            class="w-100">
     </div>
     <div class="bg-section z-1"></div>
     <div class="container overflow-hidden position-relative pe-0 z-2">
@@ -21,7 +22,7 @@
                         </div>
                     </div>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-arrow.svg"
-                        width="90" />
+                        alt="banner arrow" width="90">
                     <h1>Digital strategies for More leads, more customers, more revenue.</h1>
                     <p class="text-white">Maximize Your Online Potential with a Customized Digital Marketing Plan that
                         will increase your visibility, drive more leads and skyrocket your sales.</p>
@@ -32,28 +33,33 @@
             </div>
             <div class="col-md-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner-image-new.svg"
-                    class="w-100" />
+                    class="w-100" alt="banner image">
             </div>
         </div>
     </div>
     <div class="container position-relative z-2">
         <div class="partner-slider">
-            <h3>Loved by many <br />Australian companies</h3>
+            <h3>Loved by many <br>Australian companies</h3>
             <ul>
                 <li>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" alt="partner"
+                        class="w-100">
                 </li>
                 <li>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" alt="partner"
+                        class="w-100">
                 </li>
                 <li>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" alt="partner"
+                        class="w-100">
                 </li>
                 <li>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" alt="partner"
+                        class="w-100">
                 </li>
                 <li>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" class="w-100" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partner.svg" alt="partner"
+                        class="w-100">
                 </li>
             </ul>
         </div>
@@ -89,8 +95,8 @@
                 <div class="col-md-4">
                     <?php $blueclass = $key % 2 == 0 ? "" : "bg-blue-twmg"; ?>
                     <div class="increase-item h-100 <?php echo $blueclass; ?> p-4">
-                        <img
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/<?php echo $arr["image"]; ?>" />
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/<?php echo $arr["image"]; ?>"
+                            alt="icon-<?php echo $arr["image"]; ?>">
                         <h4>
                             <?php echo $arr['title']; ?>
                         </h4>
@@ -126,7 +132,8 @@
                     <?php foreach ($whyarr as $key => $arr): ?>
                         <div class="why-item">
                             <div class="d-inline-block align-top bullet">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bullet.svg" />
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bullet.svg"
+                                    alt="bullet">
                             </div>
                             <div class="d-inline-block align-top description">
                                 <h3 class="text-dark-blue-twmg">
@@ -144,7 +151,7 @@
             <div class="col-md-6">
                 <div class="service-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-message.png"
-                        class="w-100" />
+                        alt="right message" class="w-100">
                 </div>
             </div>
         </div>
@@ -153,13 +160,14 @@
 <div class="steps-section small-padding">
     <div class="container">
         <h2 class="mx-auto text-center mb-2 main-heading">Three Proven Steps to Digital Marketing Success</h2>
-        <p class="w-75 mx-auto text-center main-content mb-5">Discover the Power of a Tailored Digital Marketing Strategy:
+        <p class="w-75 mx-auto text-center main-content mb-5">Discover the Power of a Tailored Digital Marketing
+            Strategy:
             Unlock Your
             Business's Full Potential with Our Proven Three-Step Process to Digital Marketing Success</p>
         <?php $stepsarr = array(
             array(
                 "title" => "Comprehensive Website Assessment",
-                "description" => "To ensure that your digital marketing efforts are effective, we start by conducting a comprehensive assessment of your current website and online presence.<br/><br/> This allows us to understand your current strengths and weaknesses and identify areas for improvement. Our team will analyze your website structure, content, and overall online visibility to determine the best course of action for achieving your marketing goals.",
+                "description" => "To ensure that your digital marketing efforts are effective, we start by conducting a comprehensive assessment of your current website and online presence.<br><br> This allows us to understand your current strengths and weaknesses and identify areas for improvement. Our team will analyze your website structure, content, and overall online visibility to determine the best course of action for achieving your marketing goals.",
                 "image" => "steps/step-1.svg"
             ),
             array(
@@ -169,7 +177,7 @@
             ),
             array(
                 "title" => "Expert Execution and Continuous Improvement",
-                "description" => "Our team of experts will then execute the tailored plan, utilizing the latest digital marketing techniques and strategies to drive results for your business.<br/><br/> We'll continuously monitor and test your marketing efforts, making adjustments and improvements as needed to ensure that you're getting the most out of your investment. With our ongoing support and optimization, you can be confident that your digital marketing strategy will deliver results over the long term.",
+                "description" => "Our team of experts will then execute the tailored plan, utilizing the latest digital marketing techniques and strategies to drive results for your business.<br><br> We'll continuously monitor and test your marketing efforts, making adjustments and improvements as needed to ensure that you're getting the most out of your investment. With our ongoing support and optimization, you can be confident that your digital marketing strategy will deliver results over the long term.",
                 "image" => "steps/step-3.svg"
             )
         ); ?>
@@ -198,10 +206,9 @@
                 <div class="col-md-6">
                     <div class="step-image text-end">
                         <?php foreach ($stepsarr as $key => $arr): ?>
-                            <div
-                                class="image-content image-<?php echo $key; ?>                                             <?php echo $key == 0 ? "active" : ""; ?>">
-                                <img
-                                    src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/<?php echo $arr['image']; ?>" />
+                            <div class="image-content image-<?php echo $key; ?><?php echo $key == 0 ? " active" : ""; ?>">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/<?php echo $arr['image']; ?>"
+                                    alt="<?php echo $arr['image']; ?>">
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -284,7 +291,8 @@
             </div>
             <div class="col-md-5">
                 <div class="person-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png" />
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kirby-portrait.png"
+                        alt="kirby-portrait">
                 </div>
             </div>
         </div>
@@ -294,7 +302,7 @@
     <div class="container">
         <h2 class="main-heading mb-5">How we helped a craft beer company achieve a 20% increase in turnover</h2>
         <div class="video-wrapper">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/craft-beer.png" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/craft-beer.png" alt="craft beer">
             <i class="fa-solid fa-play"></i>
         </div>
         <div class="learn-more">

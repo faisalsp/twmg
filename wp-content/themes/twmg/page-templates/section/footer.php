@@ -51,7 +51,7 @@
                     <p>Subscribe to our marketing tips</p>
                     <form class="mc-form">
                         <input type="email" class="mb-3" name="#" placeholder="*Email">
-                        <input type="Submit" value="Submit" />
+                        <input type="Submit" value="Submit">
                     </form>
                 </div>
             </div>

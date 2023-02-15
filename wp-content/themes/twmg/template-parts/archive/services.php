@@ -140,13 +140,13 @@ echo get_top_banner(array("title" => $title, "subtitle" => $subtitle)); ?>
         <div class="row">
             <?php foreach ($stepsarr as $key => $val): ?>
                 <div class="col-md-3 d-flex align-items-stretch">
-                    <div class="digital-item text-center">
+                    <div class="digital-item text-center position-relative mb-4 text-dark-blue-twmg br-20 w-100">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/grow-icon.png" />
-                        <h4 class="proxima-bold">
+                        <h4 class="proxima-bold text-dark-blue-twmg my-3">
                             <?php echo $val; ?>
                         </h4>
                         <div class="digital-desc">
-                            <h5 class="proxima-bold">
+                            <h5 class="proxima-bold my-3">
                                 <?php echo $val; ?>
                             </h5>
                             <p class="small-font">Our team of experts will work with you to create a strategy that is

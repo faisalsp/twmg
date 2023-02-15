@@ -464,3 +464,8 @@ function get_post_primary_category($post_id, $term = 'category', $return_all_cat
 
 	return $return;
 }
+
+// to output void elements without trailing slashes
+add_filter( 'autoptimize_html_after_minify', function( $html ) {
+    return str_replace( '/>', '>', $html );
+} );

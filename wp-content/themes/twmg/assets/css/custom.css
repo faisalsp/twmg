@@ -215,7 +215,6 @@ h5, h6 {
 }
 
 .proxima-bold {
-    color: var(--unnamed-color-0c1933);
     font-family: var(--unnamed-font-family-proxima-nova), sans-serif;
     font-size: var(--unnamed-font-size-18);
     font-weight: var(--unnamed-font-weight-bold);
@@ -1094,14 +1093,9 @@ body.single-our-services-page {
 }
 
 .effective-marketing-section .digital-item {
-    position: relative;
     padding: 70px 20px 40px;
-    color: var(--unnamed-color-0c1933);
-    border-radius: 20px;
     border: 2px solid rgba(21, 44, 90, 0.2);
-    margin-bottom: 30px;
     cursor: pointer;
-    width: 100%;
     height: 275px;
     transition: 0.3s;
 }
@@ -1132,17 +1126,6 @@ body.single-our-services-page {
 
 .effective-marketing-section .digital-item:hover .digital-desc {
     display: block;
-}
-
-.effective-marketing-section .digital-item h4,
-.effective-marketing-section .digital-item h5 {
-    margin: 20px 0;
-}
-
-.effective-marketing-section .digital-item h5 {
-    color: var(--unnamed-color-ffffff);
-    font-size: var(--unnamed-font-size-18);
-    margin-bottom: 10px;
 }
 
 .effective-marketing-section .digital-item a {
