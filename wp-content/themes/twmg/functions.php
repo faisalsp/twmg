@@ -469,3 +469,5 @@ function get_post_primary_category($post_id, $term = 'category', $return_all_cat
 add_filter( 'autoptimize_html_after_minify', function( $html ) {
     return str_replace( '/>', '>', $html );
 } );
+
+remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );

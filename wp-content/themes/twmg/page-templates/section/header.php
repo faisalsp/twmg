@@ -6,8 +6,8 @@
         $white_logo = get_stylesheet_directory_uri() . "/assets/images/white-logo.svg";
         ?>
         <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
-            <img src="<?php echo $image_url; ?>" alt="" width="130" class="colour-logo">
-            <img src="<?php echo $white_logo; ?>" alt="" width="130" class="white-logo">
+            <img src="<?php echo $image_url; ?>" alt="colour logo" width="130" class="colour-logo">
+            <img src="<?php echo $white_logo; ?>" alt="white logo" width="130" class="white-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
