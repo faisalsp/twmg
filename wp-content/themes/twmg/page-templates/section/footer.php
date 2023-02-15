@@ -8,7 +8,7 @@
                 ?>
                 <a href="<?php echo get_site_url(); ?>"
                     class="d-flex footer-icon align-items-center link-dark text-decoration-none">
-                    <img src="<?php echo $image_url; ?>" width="130" />
+                    <img src="<?php echo $image_url; ?>" width="130" alt="footer logo">
                 </a>
                 <p class="footer-desc">We are a digital marketing service provider that helps businesses achieve online
                     success through customized strategies and expert implementation. Our goal is to drive results and
