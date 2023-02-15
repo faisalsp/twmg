@@ -481,7 +481,7 @@ body.single-blog-page,
 body.single-case-studies-page,
 body.single-our-services-page {
     background-color: var(--unnamed-color-f3f2f7);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .banner-section .google-wrapper {
