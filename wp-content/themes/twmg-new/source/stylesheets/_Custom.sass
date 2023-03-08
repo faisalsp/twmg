@@ -1,0 +1,211 @@
+section,
+footer .container
+    padding-top: $pb-400
+    padding-bottom: $pb-400
+
+footer
+    background-color: $color-grey
+    .copyright
+        padding: $pb-200
+        margin: 0
+
+main
+    background-color: $color-quaternary
+
+.main-wrapper
+    padding-top: $pb-200
+    padding-bottom: $pb-200
+
+.banner-wrapper
+    h1
+        line-height: $fs-h1
+        padding: 1rem 0
+    .row
+        padding: $pb-300 0
+    .google-rating
+        .google-desc
+            margin-left: $pb-200
+    .content-wrapper a
+        margin-top: $pb-200
+    .scroll-button i
+        font-size: 3rem
+
+.faq-lists
+    gap: $pb-200
+
+.process-list
+    li
+        height: 100vh
+        flex-direction: column
+        justify-content: center
+ul.sidenav
+    li
+        box-shadow: $bs-default
+        padding: $pb-200
+        background-color: $color-white
+        opacity: .7
+        p
+            margin-bottom: 0
+        &.active
+            opacity: 1
+
+.step-image
+    position: sticky
+    top: 80px
+    height: calc(100vh - 100px)
+    overflow: hidden
+    .image-content
+        opacity: 0
+        transition: opacity .5s ease-in-out
+        -webkit-transition: opacity .5s ease-in-out
+        -o-transition: opacity .5s ease-in-out
+        justify-content: end
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        &.active
+            opacity: 1
+
+.article-section
+    .featured-image
+        line-height: 0
+    ul.nav
+        padding-top: 2rem
+        padding-bottom: 2rem
+        li
+            padding: .5rem $pb-200
+            border: 2px solid $color-white
+            font-weight: $fw-700
+            a
+                color: $color-white
+            &.active
+                background-color: $color-white
+                a
+                    color: $color-primary
+
+.client-images
+    ul
+        flex-wrap: wrap
+        li
+            padding: $pb-200
+            display: inline-block
+            max-width: 15rem
+
+.with-arrow
+    &::after
+        content: ""
+        border-left: 40px solid rgba(0,0,0,0)
+        border-right: 40px solid rgba(0,0,0,0)
+        border-top: 40px solid $color-primary
+        position: absolute
+        bottom: -30px
+        left: 50%
+        transform: translateX(-50%)
+
+.video-section a
+    &::after
+        content: "\f04b"
+        left: 50%
+        top: 50%
+        font-size: 6rem
+        color: $color-white
+        transform: translate(-50%, -50%)
+        font-weight: $fw-900
+        font-family: "Font Awesome 6 Free"
+        position: absolute
+
+.faq-section
+    details
+        border: 3px solid $color-accent
+        &>summary
+            font-weight: $fw-400
+            h3
+                padding: 0
+            &::after
+                color: $color-accent
+
+.slider
+    &:before,
+    &:after
+        position: absolute
+        top: 0
+        z-index: 1
+        content: ""
+        display: block
+        width: 10rem
+        height: 100%
+
+    &:before
+        left: 0
+        background: linear-gradient(90deg, $color-quaternary, transparent)
+
+    &:after
+        right: 0
+        background: linear-gradient(-90deg, $color-quaternary, transparent)
+
+    .items
+        width: 100%
+        overflow: hidden
+        white-space: nowrap
+        cursor: pointer
+        padding: 1rem 0
+    &.active
+        cursor: grab
+    .item
+        display: inline-block
+        margin-right: 3rem
+        user-select: none
+        width: 25%
+        white-space: normal
+        .card
+            padding-top: 1rem
+        .testimonial-header
+            background: linear-gradient(to bottom, transparent 50%, $color-white 50%)
+            img
+                max-width: 5rem
+                border-radius: 100%
+
+        &:last-child
+            margin-right: 0
+
+.cta-section
+    background: linear-gradient(to bottom, $color-quaternary 50%, $color-grey 50%)
+    .section-wrapper
+        padding: $pb-400
+
+footer
+    .footer-desc
+        padding: 0 0 $pb-200
+    .footer-info
+        border-top: 3px solid $color-accent
+        padding: 1rem 0
+        gap: .5rem
+    ul.footer-navigation
+        columns: 2
+        -webkit-columns: 2
+        -moz-columns: 2
+        li a
+            text-decoration: underline
+    .social-icons
+        font-size: $fs-h1
+    .subscribe-form
+        margin-top: $pb-200
+        input
+            border: 0
+            font-size: $fs-base
+            padding: 1rem $pb-200
+            &[type='submit']
+                margin-top: 1rem
+                cursor: pointer
+
+@media (max-width:992px)
+    .w-75
+        width: 100%
+    .process-list li
+        height: auto
+    .slider .item
+        width: 80%
+    .cta-section .section-wrapper
+        padding: 2rem
+    .article-section ul.nav
+        flex-direction: column

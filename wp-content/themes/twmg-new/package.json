@@ -1,0 +1,6 @@
+{
+	"scripts": {
+        "compile-screen": "sass source/stylesheets/main.sass assets/stylesheets/index.min.css --style compressed",
+        "watch-screen": "sass --watch source/stylesheets/main.sass assets/stylesheets/index.min.css --style compressed"
+    }
+}

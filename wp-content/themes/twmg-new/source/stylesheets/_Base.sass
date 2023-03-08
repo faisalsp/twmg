@@ -1,0 +1,56 @@
+// Base
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// The base font-size is set at 62.5% for having the convenience
+// of sizing rems in a way that is similar to using px: 1.6rem = 16px
+html
+  box-sizing: border-box
+  font-size: 62.5%
+
+// Default body styles
+body
+  color: $color-primary
+  font-family: $ff-base
+  font-size: 1.6em // Currently ems cause chrome bug misinterpreting rems on body element
+  margin: 0
+  font-weight: $fw-400
+  letter-spacing: .01em
+  line-height: 1.6
+
+strong
+  font-weight: $fw-800
+
+p
+  margin-bottom: 1rem
+
+h1
+  font-size: $fs-h1
+
+h2
+  font-size: $fs-h2
+
+h3
+  font-size: $fs-h3
+
+h4
+  font-size: $fs-h4
+
+h1 
+  font-weight: $fw-700
+
+h2, h3, h4
+  font-weight: $fw-800
+
+h2
+  line-height: 3rem
+  padding-bottom: 1rem
+
+h3, h4
+  padding-bottom: .5rem
+
+a
+  text-decoration: none
+  color: $color-primary
+
+img
+  max-width: 100%

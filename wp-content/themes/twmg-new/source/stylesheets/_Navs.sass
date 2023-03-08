@@ -1,0 +1,57 @@
+
+// Navs
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+header
+  align-items: center
+  justify-content: space-between
+  padding: $pb-200
+  position: -webkit-sticky
+  position: sticky
+  top: 0
+  z-index: 1020
+  transition: .3s
+  a.navbar-brand
+    line-height: 0
+  .navbar-toggler
+    display: none
+    background-color: transparent
+    border: 0
+  .navbar-toggler-icon
+    display: inline-block
+    width: 2.5em
+    height: 2.5em
+    vertical-align: middle
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  nav ul
+    margin-left: auto
+    column-gap: 30px
+    li a
+      color: $color-white
+      display: block
+      font-weight: $fw-700
+      padding: .5rem
+      &.highlight-button
+        display: initial
+
+@media (max-width:992px)
+  header
+    .navbar-toggler
+      display: flex
+    nav
+      display: none
+      padding-top: $pb-200
+      &.show
+        display: block
+        flex: 1 1 100%
+      ul
+        flex-direction: column
+        gap: 1rem
+        &.align-center
+          align-items: normal
+        li a.highlight-button
+          display: block
+          text-align: center
+          margin-top: 0

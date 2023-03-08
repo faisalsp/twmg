@@ -1,0 +1,36 @@
+// Grid
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// .container is main centered wrapper with a max width of 117.0rem (1170px)
+.container
+  margin: 0 auto
+  max-width: 108rem
+  padding: 0 2rem
+  width: 100%
+
+.container-fluid
+  display: flex
+  margin: auto
+  flex-wrap: wrap
+  padding-left: 2rem
+  padding-right: 2rem
+
+.row
+  display: flex
+  gap: 4rem
+  flex-wrap: wrap
+  .col
+    flex: 1 1 0%
+  .col-4
+    flex: 1 1 40%
+  .col-8
+    flex: 1 1 55%
+
+@media (max-width:992px)
+  .row
+    gap: 2rem
+    .col,.col-4,.col-8
+      flex: 1 1 100%
+  .container-fluid
+    padding-right: 2rem
+    padding-left: 2rem
