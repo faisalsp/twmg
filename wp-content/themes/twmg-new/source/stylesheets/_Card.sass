@@ -7,10 +7,39 @@
   min-width: 0
   word-wrap: break-word
   padding: $pb-200
-  i
+  &.nav-card
+    ul
+      li
+        padding: .5rem $pb-200
+        font-weight: $fw-700
+        position: relative
+        a
+          color: $color-primary
+        &.active::before
+          content: "\f054"
+          color: $color-tertiary
+          font-weight: $fw-900
+          font-family: "Font Awesome 6 Free"
+          position: absolute
+          left: 0
+
+  &.floating-icon
+    position: relative
+    padding: $pb-350 $pb-200 $pb-200
+    margin-top: 1rem
+    &>i
+      position: absolute
+      top: -25px
+      left: 50%
+      transform: translateX(-50%)
+  &>i
     color: $color-tertiary
     font-size: 5rem
     margin-bottom: 1rem
+    &.main-icon
+      font-size: 6.5rem
+      margin-top: $pb-200
+      margin-bottom: $pb-200
   .card-footer
     display: flex
     color: var(--unnamed-color-ffffff)

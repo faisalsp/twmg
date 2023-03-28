@@ -9,16 +9,34 @@ footer
         padding: $pb-200
         margin: 0
 
+ul.with-bullet
+    list-style: disc
+    margin-left: $pb-200
+
 main
     background-color: $color-quaternary
+
+h1
+    line-height: $fs-h1
+    padding: 1rem 0
 
 .main-wrapper
     padding-top: $pb-200
     padding-bottom: $pb-200
 
+.single-header
+    padding-top: $pb-600
+    padding-bottom: $pb-200
+    .breadcrumbs span
+        a
+            color: $color-white
+        &:not(:last-child)::after
+            content: " > "
+        &.last a
+            text-decoration: underline
+
 .banner-wrapper
     h1
-        line-height: $fs-h1
         padding: 1rem 0
     .row
         padding: $pb-300 0
@@ -48,6 +66,12 @@ ul.sidenav
             margin-bottom: 0
         &.active
             opacity: 1
+        h3
+            display: flex
+            gap: $pb-200
+            align-items: center
+            i
+                font-size: $fs-h1
 
 .step-image
     position: sticky
@@ -103,16 +127,32 @@ ul.sidenav
         left: 50%
         transform: translateX(-50%)
 
-.video-section a
-    &::after
+.video-section a::after,
+form .wpcf7-submit::before
+    font-weight: $fw-900
+    font-family: "Font Awesome 6 Free"
+
+.video-section
+    ul.nav
+        padding-top: 2rem
+        padding-bottom: 2rem
+        li
+            padding: .5rem $pb-200
+            border: 2px solid $color-primary
+            font-weight: $fw-700
+            a
+                color: $color-primary
+            &.active
+                background-color: $color-primary
+                a
+                    color: $color-white
+    a.video-link::after
         content: "\f04b"
         left: 50%
         top: 50%
         font-size: 6rem
         color: $color-white
         transform: translate(-50%, -50%)
-        font-weight: $fw-900
-        font-family: "Font Awesome 6 Free"
         position: absolute
 
 .faq-section
@@ -136,11 +176,11 @@ ul.sidenav
         width: 10rem
         height: 100%
 
-    &:before
+    &.fade-side:before
         left: 0
         background: linear-gradient(90deg, $color-quaternary, transparent)
 
-    &:after
+    &.fade-side:after
         right: 0
         background: linear-gradient(-90deg, $color-quaternary, transparent)
 
@@ -160,14 +200,187 @@ ul.sidenav
         white-space: normal
         .card
             padding-top: 1rem
-        .testimonial-header
-            background: linear-gradient(to bottom, transparent 50%, $color-white 50%)
-            img
-                max-width: 5rem
-                border-radius: 100%
-
         &:last-child
             margin-right: 0
+    .testimonial-header
+        background: linear-gradient(to bottom, transparent 50%, $color-white 50%)
+        img
+            max-width: 5rem
+            border-radius: 100%
+
+.floating-section
+    padding-top: $pb-300
+    .floating-item
+        margin-top: -7em
+        &>i
+            font-size: 8rem
+            top: -50px
+        .card-icon
+            border-top: 3px solid rgba(21, 44, 90, .2)
+            padding: $pb-200 0 0
+            margin-top: $pb-200
+            p
+                display: flex
+                gap: 1rem
+                align-items: baseline
+    .partner-list
+        margin-top: $pb-200
+        li
+            flex: 1 1 45%
+            padding: 0 2rem
+
+.image-with-text-section
+    background: linear-gradient(to bottom, $color-quaternary 35%, $color-white 35% 100%)
+    .about-main-desc
+        font-size: $fs-h2
+        line-height: 3rem
+
+.business-growth-section
+    background: linear-gradient(to bottom, transparent 65%, $color-primary 65% 100%)
+    .card
+        box-shadow: $bs-default
+
+.letter-section
+    background: linear-gradient(90deg, $color-primary 0%, #264583 100%)
+    color: $color-white
+    .person-image
+        bottom: 0
+        line-height: 0
+
+.contact-us-section
+    .card
+        box-shadow: $bs-default
+        .card-title h2
+            text-transform: uppercase
+        label
+            position: absolute
+            top: 1.5rem
+            z-index: 9
+            background: $color-white
+            margin: 0 1rem
+            padding: 0 0.5rem
+        form
+            p
+                margin-bottom: 1rem
+                position: relative
+            .wpcf7-form-control
+                width: 100%
+                border: 1px solid rgba(12, 25, 51, .2)
+                padding: 1.5rem
+                &.wpcf7-submit
+                    color: $color-white
+                    background-color: $color-tertiary
+                    border-radius: .5rem
+                    padding: 1rem
+                    border: 0
+                    font-weight: $fw-700
+                    cursor: pointer
+                    &::before
+                        content: "\f1d8"
+                        margin-right: 1rem
+    .box-wrapper
+        gap: $pb-300
+        margin: $pb-300 0
+        .border-box
+            position: relative
+            border-radius: .5rem
+            border: 3px solid rgba(21, 44, 90, 0.2)
+            padding: $pb-200
+            p:last-child
+                margin-bottom: 0
+            .title
+                background: $color-quaternary
+                position: absolute
+                top: -15px
+                left: 50%
+                transform: translateX(-50%)
+                white-space: nowrap
+                padding: 0 10px
+                font-weight: $fw-700
+                font-size: $fs-h3
+            .detail i
+                color: $color-tertiary
+                margin-right: 1rem
+
+.contact-divide-section
+    background: url($permalink + '/assets/images/divide-background.png') no-repeat center center
+    background-size: cover
+    & .icon
+        max-width: 15rem
+
+.section-form
+    padding-top: 0
+    background: linear-gradient(to bottom, $color-primary 20%, transparent 20% 100%)
+
+.services-section
+    background: linear-gradient(to bottom, $color-primary 75%, transparent 75% 100%)
+
+.contact-box
+    #qbox-container
+        padding: $pb-300
+        width: 100%
+        #steps-container
+            margin: auto
+            display: flex
+            vertical-align: middle
+            align-items: center
+            .step
+                display: none
+                width: 100%
+                &.d-block
+                    display: block
+                .step-question
+                    display: flex
+                    margin: $pb-400 auto
+                    input
+                        flex: 1 1 50%
+
+                    label, input
+                        border: 1px solid $color-primary
+                        padding: 1rem $pb-200
+                        outline: 0
+                        line-height: 1.5
+                    label
+                        color: $color-white
+                        background-color: $color-primary
+                    i
+                        margin-left: 1rem
+                        color: $color-green
+        .progress
+            border-radius: 20px 20px 0 0
+            height: 7px
+        #q-box__buttons
+            text-align: center
+            .note
+                font-weight: $fw-700
+                margin-right: 1rem
+                i
+                    margin-right: .5rem
+            button
+                background-color: $color-tertiary
+                padding: 1rem $pb-200
+                color: $color-white
+                font-weight: $fw-700
+                margin-top: $pb-200
+                border: 0
+                cursor: pointer
+
+ul.benefits-list
+    margin: $pb-200 0
+    li
+        padding: $pb-200
+        background-color: $color-white
+        margin-bottom: $pb-200
+        padding-left: 10rem
+        &::before
+            content: url($permalink + "/assets/images/bullet.svg")
+            top: $pb-300
+            max-width: 35px
+            max-height: 35px
+            width: 100%
+            height: 100%
+            left: 3rem
+            position: absolute
 
 .cta-section
     background: linear-gradient(to bottom, $color-quaternary 50%, $color-grey 50%)
@@ -193,14 +406,13 @@ footer
         margin-top: $pb-200
         input
             border: 0
-            font-size: $fs-base
             padding: 1rem $pb-200
             &[type='submit']
                 margin-top: 1rem
                 cursor: pointer
 
 @media (max-width:992px)
-    .w-75
+    .w-60, .w-75
         width: 100%
     .process-list li
         height: auto
@@ -210,3 +422,9 @@ footer
         padding: 2rem
     .article-section ul.nav
         flex-direction: column
+    .image-with-text-section
+        background: $color-quaternary
+    .floating-section .floating-item
+        margin-top: $pb-200
+    .letter-section .person-image
+        display: none

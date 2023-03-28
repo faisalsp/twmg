@@ -3,6 +3,12 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 details
   cursor: pointer
+  &.with-border-bottom
+    border-bottom: 1px solid $color-primary
+    &>summary
+      padding: $pb-200 0
+    p
+      padding: 1rem 0
   &>summary
     position: relative
     list-style-type: none
